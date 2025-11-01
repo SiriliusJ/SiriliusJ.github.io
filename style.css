@@ -1,8 +1,4 @@
-:root{
-  --maxw: 880px;
-  --gap: 24px;
-  --accent: #111827;
-}
+:root{ --maxw:880px; --gap:24px; --accent:#111827; }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
@@ -54,3 +50,4 @@ h1,h2,h3{line-height:1.25;margin:0 0 12px}
   .nav-links{order:3;width:100%;justify-content:space-between;margin:6px 0 0}
   .pub{grid-template-columns:1fr}
 }
+
