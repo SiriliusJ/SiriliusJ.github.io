@@ -8,45 +8,38 @@
   <meta name="description" content="TODO: your site description" />
   <link rel="icon" href="images/icon/logo.jpg" />
 
-  <!-- 可选：Bootstrap（需要就留，不需要可删） -->
+  <!-- 可选：Bootstrap（需要就留） -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-  <!-- Academicons（CDN，自带字体） -->
+  <!-- Icons（CDN，自带字体） -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
-  <!-- Font Awesome（GitHub/邮箱等图标） -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="css/custom.css" />
 
-  <!-- jQuery（保留） -->
   <script src="js/jquery-2.1.3.min.js"></script>
 </head>
 
 <body>
-  <!-- 顶部导航 -->
+  <!-- 顶部导航（支持换行） -->
   <header class="site-header">
     <div class="wrapper">
       <nav class="site-nav">
-        <a class="brand" href="index.html#top">YOUR NAME</a>
+        <a class="brand" href="index.html#top" title="Home">YOUR NAME</a>
         <div class="nav-right">
-          <!-- 三语切换 -->
           <div class="lang-switch">
-            <button class="lang-btn" data-lang="en">EN</button>
-            <span class="sep">/</span>
-            <button class="lang-btn" data-lang="zh">中文</button>
-            <span class="sep">/</span>
+            <button class="lang-btn" data-lang="en">EN</button><span class="sep">/</span>
+            <button class="lang-btn" data-lang="zh">中文</button><span class="sep">/</span>
             <button class="lang-btn" data-lang="ja">日本語</button>
           </div>
-
           <a class="page-link" href="#bio" data-i18n="Biography"><b>Biography</b></a>
           <a class="page-link" href="#timeline" data-i18n="Milestone"><b>Milestone</b></a>
           <a class="page-link" href="#awards" data-i18n="Honors"><b>Honors & Awards</b></a>
           <a class="page-link" href="#publications" data-i18n="Publications"><b>Publications</b></a>
           <a class="page-link" href="#teaching" data-i18n="Teaching"><b>Teaching</b></a>
-          <!-- 新增 Coursework 独立页入口 -->
           <a class="page-link" href="coursework.html" data-i18n="Coursework"><b>Coursework</b></a>
-          <a class="page-link" href="#misc" data-i18n="Misc"><b>Misc</b></a>
+          <a class="page-link" href="misc.html" data-i18n="Misc"><b>Misc</b></a>
         </div>
       </nav>
     </div>
@@ -66,15 +59,9 @@
         <div id="my-name" class="name">YOUR NAME（你的中文名）</div>
         <div id="my-title" class="subtitle" data-i18n="College">TODO: Affiliation / Lab / Advisor</div>
         <div class="social-media">
-          <a href="https://scholar.google.com/" class="icon-button" aria-label="Google Scholar" target="_blank" rel="noreferrer">
-            <i class="ai ai-google-scholar ai-2x"></i>
-          </a>
-          <a href="https://github.com/yourname" class="icon-button" aria-label="GitHub" target="_blank" rel="noreferrer">
-            <i class="fa fa-github fa-2x"></i>
-          </a>
-          <a href="mailto:you@example.com" class="icon-button" aria-label="Email">
-            <i class="fa fa-envelope fa-2x"></i>
-          </a>
+          <a href="https://scholar.google.com/" class="icon-button" aria-label="Google Scholar" target="_blank" rel="noreferrer"><i class="ai ai-google-scholar ai-2x"></i></a>
+          <a href="https://github.com/yourname" class="icon-button" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa fa-github fa-2x"></i></a>
+          <a href="mailto:you@example.com" class="icon-button" aria-label="Email"><i class="fa fa-envelope fa-2x"></i></a>
         </div>
       </div>
     </div>
@@ -84,33 +71,31 @@
   <div class="page-content" id="top">
     <div class="wrapper">
 
-      <!-- Biography（首页概览，强调数学可在此处点题） -->
+      <!-- Biography：先整段介绍，再“研究/教育”两列卡片 -->
       <section id="bio" class="section">
-        <h1 class="section-title">
-          <i class="fa fa-id-card" aria-hidden="true"></i>
-          <span data-i18n="Biography"><b>Biography</b></span>
-        </h1>
+        <h1 class="section-title"><i class="fa fa-id-card"></i> <span data-i18n="Biography"><b>Biography</b></span></h1>
 
-        <div class="two-col">
-          <div>
-            <p data-i18n="Hello">TODO: Your short bio paragraph in English here (mention strong mathematics background).</p>
-            <p class="grey-hl">[占位/Placeholder —— 之后替换]</p>
+        <!-- 介绍（整行） -->
+        <div class="bio-intro">
+          <p data-i18n="Hello">TODO: Your short bio paragraph (1–3 sentences). Emphasize your strong mathematics coursework if you like.</p>
+          <p class="muted"><a class="chip" href="coursework.html" data-i18n="SeeAllCoursework">See full coursework →</a></p>
+          <div class="placeholder grey-hl">[占位/Placeholder —— 之后替换]</div>
+        </div>
 
-            <!-- 首页放一个 Coursework 概览入口 -->
-            <p class="muted" style="margin-top:10px;">
-              <a class="chip" href="coursework.html" data-i18n="SeeAllCoursework">See full coursework →</a>
-            </p>
-          </div>
-          <div>
-            <h3><i class="fa fa-star"></i> <span data-i18n="Research">Research Topics</span></h3>
+        <!-- 两列卡片：Research / Education -->
+        <div class="grid-2">
+          <div class="card">
+            <h3 class="card-title"><i class="fa fa-star"></i> <span data-i18n="Research">Research Topics</span></h3>
             <ul class="bullet">
               <li data-i18n="Machine">TODO: Topic A</li>
               <li data-i18n="Time">TODO: Topic B</li>
               <li data-i18n="Multimodal">TODO: Topic C</li>
               <li data-i18n="Recommendation">TODO: Topic D</li>
             </ul>
+          </div>
 
-            <h3 style="margin-top:12px;"><i class="fa fa-graduation-cap"></i> <span data-i18n="Education">Education</span></h3>
+          <div class="card">
+            <h3 class="card-title"><i class="fa fa-graduation-cap"></i> <span data-i18n="Education">Education</span></h3>
             <ul class="bullet">
               <li><b data-i18n="Zhejiang">TODO: School A</b> — <span data-i18n="Academic">TODO: Degree / Year</span></li>
               <li><b data-i18n="Xi">TODO: School B</b> — <span data-i18n="Bachelor">TODO: Degree / Year</span></li>
@@ -119,9 +104,9 @@
         </div>
       </section>
 
-      <!-- Milestone / Honors / Publications / Teaching / Misc 结构保持不变（略） -->
+      <!-- Milestone -->
       <section id="timeline" class="section">
-        <h1 class="section-title"><i class="fa fa-newspaper-o"></i><span data-i18n="Milestone"><b>Milestone</b></span></h1>
+        <h1 class="section-title"><i class="fa fa-newspaper-o"></i> <span data-i18n="Milestone"><b>Milestone</b></span></h1>
         <div class="timeline">
           <div class="timeline-item" data-i18n="timeline8">
             <div class="timeline-date">2025-06</div><div class="timeline-title">TODO</div><div class="timeline-desc">TODO</div>
@@ -132,8 +117,9 @@
         </div>
       </section>
 
+      <!-- Honors -->
       <section id="awards" class="section">
-        <h1 class="section-title"><i class="fa fa-tasks"></i><span data-i18n="Selected Honors">Selected Honors</span></h1>
+        <h1 class="section-title"><i class="fa fa-tasks"></i> <span data-i18n="Selected Honors">Selected Honors</span></h1>
         <ul class="list">
           <li data-i18n="honor11">TODO: Honor / Award #1</li>
           <li data-i18n="honor10">TODO: Honor / Award #2</li>
@@ -141,8 +127,9 @@
         </ul>
       </section>
 
+      <!-- Publications -->
       <section id="publications" class="section">
-        <h1 class="section-title"><i class="fa fa-file"></i><span data-i18n="Publications"><b>Publications</b></span></h1>
+        <h1 class="section-title"><i class="fa fa-file"></i> <span data-i18n="Publications"><b>Publications</b></span></h1>
         <div class="pub-list">
           <h3><strong data-i18n="direction2">[TODO] Direction Title</strong></h3>
           <article class="pub">
@@ -160,14 +147,10 @@
         </div>
       </section>
 
+      <!-- Teaching -->
       <section id="teaching" class="section">
-        <h1 class="section-title"><i class="fa fa-graduation-cap"></i><span data-i18n="Teaching">Teaching & Academic Service</span></h1>
+        <h1 class="section-title"><i class="fa fa-graduation-cap"></i> <span data-i18n="Teaching">Teaching & Academic Service</span></h1>
         <ul class="list"><li>TODO: Course / TA / Term</li><li>TODO: Service</li></ul>
-      </section>
-
-      <section id="misc" class="section">
-        <h1 class="section-title"><i class="fa fa-id-card"></i><span data-i18n="Misc">Miscellaneous</span></h1>
-        <p class="muted">[TODO] Photos / notes / hobbies.</p>
       </section>
 
       <p class="top"><a href="#top">↑ Top</a></p>
@@ -197,8 +180,6 @@
     })();
   </script>
 
-  <!-- 多语言 -->
   <script src="i18n.js"></script>
 </body>
 </html>
-
