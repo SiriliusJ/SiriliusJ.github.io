@@ -11,13 +11,14 @@
       "Coursework":"<b>课程</b>",
 
       "College":"TODO：你的学校/学院/实验室/导师",
-      "Hello":"TODO：中文简介，1–3 句话，强调你的数学课程背景也可。",
+      "Hello":"TODO：中文简介，1–3 句话，可强调你的数学课程背景。",
 
       "Research":"研究方向",
       "Machine":"TODO：方向A",
       "Time":"TODO：方向B",
       "Multimodal":"TODO：方向C",
       "Recommendation":"TODO：方向D",
+
       "Education":"教育经历",
       "Zhejiang":"TODO：学校A",
       "Academic":"TODO：学位/时间",
@@ -36,7 +37,16 @@
       "SelectedCoursework":"已修课程（精选）",
       "GradCompletedAt":"在（研究生阶段）已修课程",
       "GradAuditedAt":"在（研究生阶段）旁听课程",
-      "UndergradCompletedAt":"在（本科阶段）已修课程"
+      "UndergradCompletedAt":"在（本科阶段）已修课程",
+
+      "PCBuilds":"装机",
+      "BuildEarliest":"最早的一台装机",
+      "BuildMostExpensive":"最贵的一台装机",
+      "BuildSchool":"在学校装的一台装机",
+      "BuildUSScavenged":"在美国预算/“捡垃圾”的一台装机",
+      "BuildLab":"给实验室装的一台装机",
+      "PhotoWall":"照片墙",
+      "PhotoWallIntro":"一些有意思的照片记录。"
     },
     en: {
       "Biography":"<b>Biography</b>",
@@ -56,6 +66,7 @@
       "Time":"TODO: Topic B",
       "Multimodal":"TODO: Topic C",
       "Recommendation":"TODO: Topic D",
+
       "Education":"Education",
       "Zhejiang":"TODO: School A",
       "Academic":"TODO: Degree / Year",
@@ -74,7 +85,16 @@
       "SelectedCoursework":"Selected Coursework",
       "GradCompletedAt":"Selected graduate-level coursework completed at YOUR UNIVERSITY",
       "GradAuditedAt":"Selected graduate-level coursework audited at YOUR UNIVERSITY",
-      "UndergradCompletedAt":"Selected coursework completed at YOUR UNDERGRAD UNIVERSITY"
+      "UndergradCompletedAt":"Selected coursework completed at YOUR UNDERGRAD UNIVERSITY",
+
+      "PCBuilds":"PC Builds",
+      "BuildEarliest":"Earliest PC Build",
+      "BuildMostExpensive":"Most Expensive Build",
+      "BuildSchool":"Campus Build",
+      "BuildUSScavenged":"US Budget/Scavenged Build",
+      "BuildLab":"Lab Workstation Build",
+      "PhotoWall":"Photo Wall",
+      "PhotoWallIntro":"A casual wall of memorable moments."
     },
     ja: {
       "Biography":"<b>略歴</b>",
@@ -94,6 +114,7 @@
       "Time":"TODO：分野B",
       "Multimodal":"TODO：分野C",
       "Recommendation":"TODO：分野D",
+
       "Education":"学歴",
       "Zhejiang":"TODO：学校A",
       "Academic":"TODO：学位・年度",
@@ -105,7 +126,16 @@
       "SelectedCoursework":"履修科目（抜粋）",
       "GradCompletedAt":"（大学院）履修科目（修了）",
       "GradAuditedAt":"（大学院）履修科目（聴講）",
-      "UndergradCompletedAt":"（学部）履修科目（修了）"
+      "UndergradCompletedAt":"（学部）履修科目（修了）",
+
+      "PCBuilds":"自作PC",
+      "BuildEarliest":"最初の自作PC",
+      "BuildMostExpensive":"最も高価な自作PC",
+      "BuildSchool":"キャンパスでの組立PC",
+      "BuildUSScavenged":"米国・格安/拾得パーツPC",
+      "BuildLab":"研究室用ワークステーション",
+      "PhotoWall":"フォトウォール",
+      "PhotoWallIntro":"思い出の写真をゆるく展示します。"
     }
   };
 
@@ -128,8 +158,6 @@
       else el.innerHTML = val;
     });
     document.documentElement.setAttribute("data-lang", lang);
-
-    // 高亮当前语言按钮
     document.querySelectorAll(".lang-btn").forEach(btn=>{
       btn.classList.toggle("active", btn.getAttribute("data-lang")===lang);
     });
@@ -138,13 +166,12 @@
   document.addEventListener("DOMContentLoaded", () => {
     const current = getLang();
     applyI18n(current);
-
     document.querySelectorAll(".lang-btn").forEach(btn=>{
       btn.addEventListener("click", ()=>{
         const to = btn.getAttribute("data-lang") || "en";
-        setLang(to);
-        applyI18n(to);
+        setLang(to); applyI18n(to);
       });
     });
   });
 })();
+
