@@ -1,133 +1,233 @@
 <!doctype html>
-<html lang="zh" data-lang="zh">
+<html lang="en" data-lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Yiyang Jiang · Academic Homepage</title>
-  <meta name="description" content="Yiyang Jiang — Graphons, Optimization, Neural Decoding." />
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="assets/js/main.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>YOUR NAME · Academic Homepage</title>
+  <meta name="description" content="TODO: your site description" />
+  <link rel="icon" href="images/icon/logo.jpg" />
+
+  <!-- 可选：Bootstrap（需要就留，不需要可删这一行） -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- Academicons（CDN，自动包含字体） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+
+  <!-- Font Awesome（图标库，用于 GitHub/邮箱等） -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <!-- 你的主样式和自定义样式 -->
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <!-- jQuery（保留） -->
+  <script src="js/jquery-2.1.3.min.js"></script>
 </head>
+
 <body>
-  <!-- 顶部导航（含中文/EN 切换） -->
+  <!-- 顶部导航 -->
   <header class="site-header">
-    <nav class="nav">
-      <a class="brand" href="#top">Yiyang Jiang</a>
-      <div class="nav-links">
-        <a href="#bio">Biography</a>
-        <a href="#milestone">Milestone</a>
-        <a href="#honors">Honors</a>
-        <a href="#pubs">Publications</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#misc">Misc</a>
-      </div>
-      <div class="lang-switch">
-        <button id="to-zh" type="button">中文</button><span class="sep">/</span><button id="to-en" type="button">EN</button>
-      </div>
-    </nav>
+    <div class="wrapper">
+      <nav class="site-nav">
+        <a class="brand" href="#top">YOUR NAME</a>
+        <div class="nav-right">
+          <button id="langToggle" class="lang-switch" aria-label="Toggle language">中文 / EN</button>
+          <a class="page-link" href="#bio" data-i18n="Biography"><b>Biography</b></a>
+          <a class="page-link" href="#timeline" data-i18n="Milestone"><b>Milestone</b></a>
+          <a class="page-link" href="#awards" data-i18n="Honors"><b>Honors & Awards</b></a>
+          <a class="page-link" href="#publications" data-i18n="Publications"><b>Publications</b></a>
+          <a class="page-link" href="#teaching" data-i18n="Teaching"><b>Teaching</b></a>
+          <a class="page-link" href="#misc" data-i18n="Misc"><b>Misc</b></a>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <main id="top" class="container">
-    <!-- Biography（头像 + 文本） -->
-    <section id="bio" class="section">
-      <h2>
-        <span class="lang zh">个人简介</span>
-        <span class="lang en">Biography</span>
-      </h2>
-
-      <div class="hero">
-        <!-- 没有上传 me.jpg 时会自动显示灰色占位图 -->
-        <img class="avatar" src="assets/img/me.jpg"
-             alt="Yiyang Jiang portrait"
-             onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27600%27 height=%27600%27><rect width=%27100%25%27 height=%27100%25%27 fill=%27%23f2f2f2%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23999%27 font-family=%27Arial%27 font-size=%2760%27>Avatar</text></svg>'">
-        <div class="hero-body">
-          <p class="lead">
-            <span class="lang zh">我是华盛顿大学（圣路易斯）工程学院 ESE 的硕士生，研究 Graphon/H-Property、优化与多模态神经解码。</span>
-            <span class="lang en">I am an M.S. student in ESE at WashU. My research focuses on graphons/H-property, optimization, and multimodal neural decoding.</span>
-          </p>
-          <ul class="inline">
-            <li><a href="mailto:you@example.com">Email</a></li>
-            <li><a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a></li>
-            <li><a href="https://github.com/SiriliusJ" target="_blank" rel="noreferrer">GitHub</a></li>
-            <li><a href="assets/cv.pdf" target="_blank" rel="noreferrer">CV (PDF)</a></li>
-          </ul>
+  <!-- 顶部封面 + 名片 -->
+  <div id="profile-cover" class="cover">
+    <div class="cover-bg" style="background-image:url('images/background/cover.jpg');"></div>
+    <div id="profile-namecard" class="profile-wrapper">
+      <div class="profile-col profile-col-1">
+        <img id="profile-avatar" class="avatar"
+             src="images/self-portrait/me.png"
+             alt="portrait"
+             onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27600%27 height=%27600%27><rect width=%27100%25%27 height=%27100%25%27 fill=%27%23f2f2f2%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23999%27 font-family=%27Arial%27 font-size=%2740%27>Avatar</text></svg>'" />
+      </div>
+      <div class="profile-col profile-col-2">
+        <div id="my-name" class="name">YOUR NAME（你的中文名）</div>
+        <div id="my-title" class="subtitle" data-i18n="College">TODO: Affiliation / Lab / Advisor</div>
+        <div class="social-media">
+          <a href="https://scholar.google.com/" class="icon-button" aria-label="Google Scholar" target="_blank" rel="noreferrer">
+            <i class="ai ai-google-scholar ai-2x"></i>
+          </a>
+          <a href="https://github.com/yourname" class="icon-button" aria-label="GitHub" target="_blank" rel="noreferrer">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+          <a href="mailto:you@example.com" class="icon-button" aria-label="Email">
+            <i class="fa fa-envelope fa-2x"></i>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- Milestone -->
-    <section id="milestone" class="section">
-      <h2><span class="lang zh">里程碑</span><span class="lang en">Milestone</span></h2>
-      <ul class="timeline">
-        <li><span class="time">2025</span>
-          <span class="lang zh">聚焦阶梯型 graphon 的 H 性质、LP 整数性与哈密顿分解</span>
-          <span class="lang en">Focused on H-property, LP integrality & Hamiltonian decompositions on step-graphons</span>
-        </li>
-        <li><span class="time">2024</span>
-          <span class="lang zh">加入 Chen Lab</span>
-          <span class="lang en">Joined Chen Lab</span>
-        </li>
-      </ul>
-    </section>
+  <!-- 主体 -->
+  <div class="page-content" id="top">
+    <div class="wrapper">
 
-    <!-- Honors -->
-    <section id="honors" class="section">
-      <h2><span class="lang zh">荣誉与奖项</span><span class="lang en">Honors & Awards</span></h2>
-      <ul>
-        <li>2025 — <span class="lang zh">某某奖学金</span><span class="lang en">Some Scholarship</span></li>
-      </ul>
-    </section>
+      <!-- Biography -->
+      <section id="bio" class="section">
+        <h1 class="section-title">
+          <i class="fa fa-id-card" aria-hidden="true"></i>
+          <span data-i18n="Biography"><b>Biography</b></span>
+        </h1>
 
-    <!-- Publications（卡片 + 配图 + 按钮） -->
-    <section id="pubs" class="section">
-      <h2><span class="lang zh">论文</span><span class="lang en">Publications</span></h2>
-
-      <div class="pub-grid">
-        <article class="pub">
-          <div class="thumb">
-            <!-- 没有上传配图时显示占位图 -->
-            <img src="assets/papers/h-property.jpg"
-                 alt="H-Property paper thumbnail"
-                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27960%27 height=%27640%27><rect width=%27100%25%27 height=%27100%25%27 fill=%27%23f2f2f2%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23999%27 font-family=%27Arial%27 font-size=%2742%27>Paper Image</text></svg>'">
+        <div class="two-col">
+          <div>
+            <p data-i18n="Hello">TODO: Your short bio paragraph in English here.</p>
+            <p class="grey-hl">[占位/Placeholder —— 你之后把内容换上]</p>
           </div>
-          <div class="meta">
-            <h3>H-Property on Step-Graphons: LP Integrality and Hamiltonian Decompositions</h3>
-            <p class="authors">Y. Jiang, X. Chen · <span class="venue">arXiv, 2025</span></p>
-            <p class="tldr">
-              <span class="lang zh">围绕阶梯型 graphon 的 H 性质，研究 LP 整数性与哈密顿分解。</span>
-              <span class="lang en">LP integrality and Hamiltonian decompositions for H-property on step-graphons.</span>
-            </p>
-            <p class="links">
-              <a class="btn" href="assets/papers/h-property.pdf" target="_blank">Paper</a>
-              <a class="btn outline" href="https://github.com/your-paper-repo" target="_blank">Code</a>
-            </p>
+          <div>
+            <h3><i class="fa fa-star"></i> <span data-i18n="Research">Research Topics</span></h3>
+            <ul class="bullet">
+              <li data-i18n="Machine">TODO: Topic A</li>
+              <li data-i18n="Time">TODO: Topic B</li>
+              <li data-i18n="Multimodal">TODO: Topic C</li>
+              <li data-i18n="Recommendation">TODO: Topic D</li>
+            </ul>
+
+            <h3><i class="fa fa-graduation-cap"></i> <span data-i18n="Education">Education</span></h3>
+            <ul class="bullet">
+              <li><b data-i18n="Zhejiang">TODO: School A</b> — <span data-i18n="Academic">TODO: Degree / Year</span></li>
+              <li><b data-i18n="Xi">TODO: School B</b> — <span data-i18n="Bachelor">TODO: Degree / Year</span></li>
+            </ul>
           </div>
-        </article>
+        </div>
+      </section>
+
+      <!-- Milestone / Timeline -->
+      <section id="timeline" class="section">
+        <h1 class="section-title">
+          <i class="fa fa-newspaper-o"></i>
+          <span data-i18n="Milestone"><b>Milestone</b></span>
+        </h1>
+
+        <div class="timeline">
+          <div class="timeline-item" data-i18n="timeline8">
+            <div class="timeline-date">2025-06</div>
+            <div class="timeline-title">TODO: Category</div>
+            <div class="timeline-desc">TODO: A brief highlight.</div>
+          </div>
+          <div class="timeline-item" data-i18n="timeline7">
+            <div class="timeline-date">2025-03</div>
+            <div class="timeline-title">TODO: Category</div>
+            <div class="timeline-desc">TODO: Another highlight.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Honors -->
+      <section id="awards" class="section">
+        <h1 class="section-title">
+          <i class="fa fa-tasks"></i>
+          <span data-i18n="Selected Honors">Selected Honors</span>
+        </h1>
+        <ul class="list">
+          <li data-i18n="honor11">TODO: Honor / Award item #1</li>
+          <li data-i18n="honor10">TODO: Honor / Award item #2</li>
+          <li data-i18n="honor9">TODO: Honor / Award item #3</li>
+        </ul>
+      </section>
+
+      <!-- Publications -->
+      <section id="publications" class="section">
+        <h1 class="section-title">
+          <i class="fa fa-file"></i>
+          <span data-i18n="Publications"><b>Publications</b></span>
+        </h1>
+
+        <div class="pub-list">
+          <h3><strong data-i18n="direction2">[TODO] Direction Title</strong></h3>
+
+          <article class="pub">
+            <div class="pub-left">
+              <img class="pub-thumb" src="publications/placeholder.jpg"
+                   alt="paper cover"
+                   onerror="this.style.display='none'">
+            </div>
+            <div class="pub-right">
+              <div class="pub-title">[TODO] Paper Title</div>
+              <div class="pub-desc">[TODO] One-sentence TLDR / short description.</div>
+              <div class="pub-authors"><b>YOUR NAME</b>, Author 2, Author 3</div>
+              <div class="pub-venue"><span class="venue">[TODO] Venue, 202X</span></div>
+              <div class="pub-links">
+                [<a class="tag" href="#" target="_blank"><strong>Paper</strong></a>]
+                [<a class="tag" href="#" target="_blank"><strong>Code</strong></a>]
+              </div>
+            </div>
+          </article>
+
+          <!-- 复制上面 <article> 再填更多论文 -->
+        </div>
+      </section>
+
+      <!-- Teaching -->
+      <section id="teaching" class="section">
+        <h1 class="section-title">
+          <i class="fa fa-graduation-cap"></i>
+          <span data-i18n="Teaching">Teaching & Academic Service</span>
+        </h1>
+        <ul class="list">
+          <li>TODO: Course / TA / Term</li>
+          <li>TODO: Service / Reviewer</li>
+        </ul>
+      </section>
+
+      <!-- Misc -->
+      <section id="misc" class="section">
+        <h1 class="section-title">
+          <i class="fa fa-id-card"></i>
+          <span data-i18n="Misc">Miscellaneous</span>
+        </h1>
+        <p class="muted">[TODO] Photos / notes / hobbies. We’ll convert to a gallery later.</p>
+      </section>
+
+      <p class="top"><a href="#top">↑ Top</a></p>
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="wrapper footer-inner">
+      <div class="footer-social">
+        <a href="https://scholar.google.com/" class="icon-button" aria-label="Google Scholar" target="_blank" rel="noreferrer">
+          <i class="ai ai-google-scholar-square ai-2x"></i>
+        </a>
+        <a href="https://github.com/yourname" class="icon-button" aria-label="GitHub" target="_blank" rel="noreferrer">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+        <a href="mailto:you@example.com" class="icon-button" aria-label="Email">
+          <i class="fa fa-envelope fa-2x"></i>
+        </a>
       </div>
-    </section>
-
-    <!-- Teaching -->
-    <section id="teaching" class="section">
-      <h2><span class="lang zh">教学</span><span class="lang en">Teaching</span></h2>
-      <ul>
-        <li>ESE 5980 Seminar — TA <span class="muted">(Fall 2025)</span></li>
-      </ul>
-    </section>
-
-    <!-- Misc -->
-    <section id="misc" class="section">
-      <h2>Misc</h2>
-      <p class="muted">
-        <span class="lang zh">这里放活动/生活照片或随笔；后面我们会做成图片卡片网格。</span>
-        <span class="lang en">Here you can add photos or notes; we’ll turn this into a small gallery later.</span>
-      </p>
-    </section>
-
-    <p class="top"><a href="#top">↑ Top</a></p>
-  </main>
-
-  <footer class="footer">
-    <p>© <span id="year"></span> Yiyang Jiang · <span class="lang zh">静态站点骨架</span><span class="lang en">static skeleton</span></p>
+      <div class="footer-text">This website layout is an original skeleton with placeholder content. Replace freely.</div>
+    </div>
   </footer>
+
+  <!-- 返回顶部（用 jQuery 简单实现） -->
+  <div class="back-to-top">Top</div>
+  <script>
+    (function(){
+      var $btn = $('.back-to-top');
+      function sync(){ $btn.toggle($(window).scrollTop() > 220); }
+      $(window).on('scroll', sync); sync();
+      $btn.on('click', function(e){ e.preventDefault(); $('html,body').animate({scrollTop:0}, 300); });
+    })();
+  </script>
+
+  <!-- 多语言 -->
+  <script src="i18n.js"></script>
 </body>
 </html>
