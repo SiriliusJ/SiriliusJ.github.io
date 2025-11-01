@@ -1,0 +1,106 @@
+/* ===== 主题变量（你可随时改配色/圆角/阴影） ===== */
+:root{
+  --maxw: 900px;
+  --accent: #111827;
+  --fg: #111;
+  --muted: #666;
+  --line: #e8e8e8;
+  --chip-bg: #f5f5f5;
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  color:var(--fg);
+  background:#fff;
+}
+
+/* 容器 & 标题 */
+.wrapper{max-width:var(--maxw);margin:0 auto;padding:0 18px}
+.section{padding:36px 0;border-bottom:1px solid var(--line);scroll-margin-top:86px}
+.section-title{display:flex;align-items:center;gap:10px;margin:0 0 12px;line-height:1.2}
+h1,h2,h3{margin:0 0 10px}
+.muted{color:var(--muted)}
+.list{padding-left:18px}
+
+/* 顶部导航 */
+.site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:20}
+.site-nav{height:60px;display:flex;align-items:center;gap:18px}
+.brand{text-decoration:none;font-weight:800;color:#000}
+.page-link{color:#333;text-decoration:none;margin-left:8px}
+.page-link:hover{color:#000}
+.nav-right{display:flex;align-items:center;margin-left:auto;gap:10px}
+.lang-switch{border:1px solid var(--line);border-radius:8px;padding:6px 10px;background:#fff;cursor:pointer}
+
+/* 顶部封面 + 名片 */
+.cover{position:relative;border-bottom:1px solid var(--line)}
+.cover-bg{
+  height:220px;
+  background:#f6f7f9 center/cover no-repeat;
+}
+.profile-wrapper{
+  background:#fff;margin:-60px auto 0;max-width:var(--maxw);
+  border:1px solid var(--line); border-radius:var(--radius);
+  box-shadow:var(--shadow); padding:16px;display:grid;grid-template-columns:120px 1fr;gap:16px;
+}
+.avatar{width:120px;height:120px;border-radius:16px;object-fit:cover;border:1px solid var(--line)}
+.name{font-weight:800;font-size:22px;letter-spacing:.2px}
+.subtitle{color:var(--muted);margin-top:2px}
+.social-media{display:flex;gap:10px;margin-top:10px}
+.icon-button{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:9px;background:var(--chip-bg);color:#333;text-decoration:none}
+.icon-button:hover{filter:brightness(.96)}
+
+/* 双列布局（Biography） */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.bullet{margin:8px 0 0}
+
+/* 时间轴 */
+.timeline{display:grid;gap:10px}
+.timeline-item{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:10px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.timeline-date{color:var(--muted)}
+.timeline-title{font-weight:700}
+.timeline-desc{color:#333}
+
+/* 论文列表 */
+.pub-list{display:grid;gap:14px}
+.pub{display:grid;grid-template-columns:140px 1fr;gap:14px;border:1px solid var(--line);border-radius:10px;background:#fff;padding:14px}
+.pub-thumb{width:100%;height:100px;object-fit:cover;border-radius:8px;background:#f2f2f2}
+.pub-title{font-weight:700;margin-bottom:4px}
+.pub-desc{color:#333;margin-bottom:6px}
+.pub-authors{font-size:.95rem;margin-bottom:6px}
+.pub-venue .venue{background:var(--chip-bg);padding:2px 8px;border-radius:999px}
+.pub-links .tag{color:var(--accent);text-decoration:none}
+.pub-links .tag:hover{text-decoration:underline}
+
+/* 顶部返回 */
+.top{text-align:right;margin:18px 0}
+
+/* 页脚 */
+.site-footer{border-top:1px solid var(--line);padding:18px 0;margin-top:24px}
+.footer-inner{display:flex;align-items:center;gap:16px;justify-content:space-between}
+.footer-text{color:var(--muted)}
+
+/* 右下角返回顶部按钮 */
+.back-to-top{
+  position:fixed;right:20px;bottom:24px;
+  display:none;align-items:center;justify-content:center;
+  width:44px;height:44px;border-radius:12px;background:#111827;color:#fff;cursor:pointer;
+  box-shadow:var(--shadow);font-weight:700
+}
+
+/* 多语言显示开关（如果你更喜欢“在位替换”，用 i18n.js 的 data-i18n 即可） */
+[data-lang="zh"] .lang-en{display:none}
+[data-lang="en"] .lang-zh{display:none}
+
+/* 响应式 */
+@media (max-width:760px){
+  .profile-wrapper{grid-template-columns:80px 1fr}
+  .avatar{width:80px;height:80px;border-radius:12px}
+  .two-col{grid-template-columns:1fr}
+  .pub{grid-template-columns:1fr}
+  .timeline-item{grid-template-columns:90px 1fr}
+}
