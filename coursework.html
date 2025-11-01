@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YOUR NAME · Coursework</title>
+  <link rel="icon" href="images/icon/logo.jpg" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <script src="js/jquery-2.1.3.min.js"></script>
+</head>
+<body class="cw-page">
+  <!-- 顶部导航（指回首页各分区 + 当前 Coursework） -->
+  <header class="site-header">
+    <div class="wrapper">
+      <nav class="site-nav">
+        <a class="brand" href="index.html#top">YOUR NAME</a>
+        <div class="nav-right">
+          <div class="lang-switch">
+            <button class="lang-btn" data-lang="en">EN</button><span class="sep">/</span>
+            <button class="lang-btn" data-lang="zh">中文</button><span class="sep">/</span>
+            <button class="lang-btn" data-lang="ja">日本語</button>
+          </div>
+          <a class="page-link" href="index.html#bio" data-i18n="Biography"><b>Biography</b></a>
+          <a class="page-link" href="index.html#publications" data-i18n="Publications"><b>Publications</b></a>
+          <a class="page-link" href="coursework.html" data-i18n="Coursework"><b>Coursework</b></a>
+          <a class="page-link" href="index.html#teaching" data-i18n="Teaching"><b>Teaching</b></a>
+          <a class="page-link" href="index.html#misc" data-i18n="Misc"><b>Misc</b></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section class="section">
+      <h1 class="section-title"><i class="fa fa-book"></i> <span data-i18n="SelectedCoursework">Selected Coursework</span></h1>
+
+      <!-- 学校 1（示例占位） -->
+      <div class="cw-block">
+        <h3>
+          <span><b data-i18n="GradCompletedAt">Selected graduate-level coursework completed at YOUR UNIVERSITY</b></span>
+          <span class="cw-dates">Aug 2022 – May 2025</span>
+        </h3>
+        <ul class="cw-list">
+          <li>TODO: Course A (e.g., Real Analysis)</li>
+          <li>TODO: Course B (e.g., Abstract Algebra)</li>
+          <li>TODO: Course C (e.g., Algebraic Topology)</li>
+        </ul>
+      </div>
+
+      <!-- 学校 1 审听（示例占位） -->
+      <div class="cw-block">
+        <h3>
+          <span><b data-i18n="GradAuditedAt">Selected graduate-level coursework audited at YOUR UNIVERSITY</b></span>
+          <span class="cw-dates">Aug 2022 – May 2025</span>
+        </h3>
+        <ul class="cw-list">
+          <li>TODO: Audited Course A</li>
+          <li>TODO: Audited Course B</li>
+        </ul>
+      </div>
+
+      <!-- 学校 2 本科（示例占位） -->
+      <div class="cw-block">
+        <h3>
+          <span><b data-i18n="UndergradCompletedAt">Selected coursework completed at YOUR UNDERGRAD UNIVERSITY</b></span>
+          <span class="cw-dates">Sep 2020 – Jun 2022</span>
+        </h3>
+        <ul class="cw-list">
+          <li>TODO: Advanced Linear Algebra</li>
+          <li>TODO: Complex Analysis</li>
+          <li>TODO: Topology</li>
+          <li>TODO: Probability Theory</li>
+        </ul>
+      </div>
+
+      <p class="muted" style="margin-top:18px">* Replace TODO items with your actual courses; add more blocks as needed.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper footer-inner">
+      <div class="footer-text">Coursework page — placeholder only.</div>
+    </div>
+  </footer>
+
+  <div class="back-to-top">Top</div>
+  <script>
+    (function(){
+      var $btn = $('.back-to-top');
+      function sync(){ $btn.toggle($(window).scrollTop() > 220); }
+      $(window).on('scroll', sync); sync();
+      $btn.on('click', function(e){ e.preventDefault(); $('html,body').animate({scrollTop:0}, 300); });
+    })();
+  </script>
+
+  <script src="i18n.js"></script>
+</body>
+</html>
