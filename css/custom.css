@@ -1,0 +1,5 @@
+/* 轻微高亮，用于小标签/关键词 */
+.text-hl { padding:0 .25em; border-radius:6px; background:#fff3cd; color:#7a5c00 }
+
+/* 灰色占位，用于“待补充”文字 */
+.grey-hl { color:#888; background:#f5f5f5; padding:0 .25em; border-radius:6px }
