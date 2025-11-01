@@ -1,8 +1,112 @@
-<!doctype html><html lang="zh"><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>我的学术主页</title>
-<main style="max-width:880px;margin:48px auto;font:16px/1.6 system-ui">
-  <h1>It works! 🎉</h1>
-  <p>这是我的 GitHub Pages 主页。</p>
-</main>
+<!doctype html>
+<html lang="zh" data-lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yiyang Jiang · Academic Homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <!-- 顶部导航（含中文 / EN 切换） -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top">Yiyang Jiang</a>
+      <div class="nav-links">
+        <a href="#bio">Biography</a>
+        <a href="#milestone">Milestone</a>
+        <a href="#honors">Honors</a>
+        <a href="#pubs">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#misc">Misc</a>
+      </div>
+      <div class="lang-switch">
+        <button id="to-zh" type="button">中文</button><span class="sep">/</span><button id="to-en" type="button">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="container">
+    <!-- Biography -->
+    <section id="bio" class="section">
+      <h2>
+        <span class="lang zh">个人简介</span>
+        <span class="lang en">Biography</span>
+      </h2>
+      <p class="lead">
+        <span class="lang zh">我是华盛顿大学（圣路易斯）工程学院 ESE 的硕士生，研究 Graphon/H-Property、优化与多模态神经解码。</span>
+        <span class="lang en">I am an M.S. student in ESE at WashU. My research focuses on graphons/H-property, optimization, and multimodal neural decoding.</span>
+      </p>
+      <ul class="inline">
+        <li><a href="mailto:you@example.com">Email</a></li>
+        <li><a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a></li>
+        <li><a href="https://github.com/SiriliusJ" target="_blank" rel="noreferrer">GitHub</a></li>
+        <li><a href="assets/cv.pdf" target="_blank" rel="noreferrer">CV (PDF)</a></li>
+      </ul>
+    </section>
+
+    <!-- Milestone -->
+    <section id="milestone" class="section">
+      <h2><span class="lang zh">里程碑</span><span class="lang en">Milestone</span></h2>
+      <ul class="timeline">
+        <li><span class="time">2025</span> <span class="lang zh">开始聚焦 Step-Graphon 的哈密顿分解与 LP 整数性</span><span class="lang en">Focused on Hamiltonian decompositions & LP integrality on step-graphons</span></li>
+        <li><span class="time">2024</span> <span class="lang zh">加入 Chen Lab</span><span class="lang en">Joined Chen Lab</span></li>
+      </ul>
+    </section>
+
+    <!-- Honors -->
+    <section id="honors" class="section">
+      <h2><span class="lang zh">荣誉与奖项</span><span class="lang en">Honors & Awards</span></h2>
+      <ul>
+        <li>2025 — <span class="lang zh">某某奖学金</span><span class="lang en">Some Scholarship</span></li>
+      </ul>
+    </section>
+
+    <!-- Publications -->
+    <section id="pubs" class="section">
+      <h2><span class="lang zh">论文</span><span class="lang en">Publications</span></h2>
+
+      <div class="pub-grid">
+        <article class="pub">
+          <div class="thumb"></div>
+          <div class="meta">
+            <h3>H-Property on Step-Graphons: LP Integrality and Hamiltonian Decompositions</h3>
+            <p class="authors">Y. Jiang, X. Chen · <span class="venue">arXiv, 2025</span></p>
+            <p class="tldr">
+              <span class="lang zh">围绕阶梯型 graphon 的 H 性质，研究 LP 整数性与哈密顿分解。</span>
+              <span class="lang en">LP integrality and Hamiltonian decompositions for H-property on step-graphons.</span>
+            </p>
+            <p class="links">
+              <a class="btn" href="#" target="_blank">Paper</a>
+              <a class="btn outline" href="#" target="_blank">Code</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Teaching -->
+    <section id="teaching" class="section">
+      <h2><span class="lang zh">教学</span><span class="lang en">Teaching</span></h2>
+      <ul>
+        <li>ESE 5980 Seminar — TA <span class="muted">(Fall 2025)</span></li>
+      </ul>
+    </section>
+
+    <!-- Misc -->
+    <section id="misc" class="section">
+      <h2>Misc</h2>
+      <p class="muted">
+        <span class="lang zh">这里放活动/生活照片或随笔；后面我们会做成图片卡片网格。</span>
+        <span class="lang en">Here you can add photos or notes; we’ll turn this into a small gallery later.</span>
+      </p>
+    </section>
+
+    <p class="top"><a href="#top">↑ Top</a></p>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Yiyang Jiang · <span class="lang zh">本页为静态站点骨架</span><span class="lang en">static skeleton</span></p>
+  </footer>
+</body>
 </html>
