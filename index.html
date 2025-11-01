@@ -4,11 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Yiyang Jiang · Academic Homepage</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="main.js"></script>
+  <meta name="description" content="Yiyang Jiang — Graphons, Optimization, Neural Decoding." />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
-  <!-- 顶部导航（含中文 / EN 切换） -->
+  <!-- 顶部导航（含中文/EN 切换） -->
   <header class="site-header">
     <nav class="nav">
       <a class="brand" href="#top">Yiyang Jiang</a>
@@ -27,30 +28,45 @@
   </header>
 
   <main id="top" class="container">
-    <!-- Biography -->
+    <!-- Biography（头像 + 文本） -->
     <section id="bio" class="section">
       <h2>
         <span class="lang zh">个人简介</span>
         <span class="lang en">Biography</span>
       </h2>
-      <p class="lead">
-        <span class="lang zh">我是华盛顿大学（圣路易斯）工程学院 ESE 的硕士生，研究 Graphon/H-Property、优化与多模态神经解码。</span>
-        <span class="lang en">I am an M.S. student in ESE at WashU. My research focuses on graphons/H-property, optimization, and multimodal neural decoding.</span>
-      </p>
-      <ul class="inline">
-        <li><a href="mailto:you@example.com">Email</a></li>
-        <li><a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a></li>
-        <li><a href="https://github.com/SiriliusJ" target="_blank" rel="noreferrer">GitHub</a></li>
-        <li><a href="assets/cv.pdf" target="_blank" rel="noreferrer">CV (PDF)</a></li>
-      </ul>
+
+      <div class="hero">
+        <!-- 没有上传 me.jpg 时会自动显示灰色占位图 -->
+        <img class="avatar" src="assets/img/me.jpg"
+             alt="Yiyang Jiang portrait"
+             onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27600%27 height=%27600%27><rect width=%27100%25%27 height=%27100%25%27 fill=%27%23f2f2f2%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23999%27 font-family=%27Arial%27 font-size=%2760%27>Avatar</text></svg>'">
+        <div class="hero-body">
+          <p class="lead">
+            <span class="lang zh">我是华盛顿大学（圣路易斯）工程学院 ESE 的硕士生，研究 Graphon/H-Property、优化与多模态神经解码。</span>
+            <span class="lang en">I am an M.S. student in ESE at WashU. My research focuses on graphons/H-property, optimization, and multimodal neural decoding.</span>
+          </p>
+          <ul class="inline">
+            <li><a href="mailto:you@example.com">Email</a></li>
+            <li><a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a></li>
+            <li><a href="https://github.com/SiriliusJ" target="_blank" rel="noreferrer">GitHub</a></li>
+            <li><a href="assets/cv.pdf" target="_blank" rel="noreferrer">CV (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- Milestone -->
     <section id="milestone" class="section">
       <h2><span class="lang zh">里程碑</span><span class="lang en">Milestone</span></h2>
       <ul class="timeline">
-        <li><span class="time">2025</span> <span class="lang zh">开始聚焦 Step-Graphon 的哈密顿分解与 LP 整数性</span><span class="lang en">Focused on Hamiltonian decompositions & LP integrality on step-graphons</span></li>
-        <li><span class="time">2024</span> <span class="lang zh">加入 Chen Lab</span><span class="lang en">Joined Chen Lab</span></li>
+        <li><span class="time">2025</span>
+          <span class="lang zh">聚焦阶梯型 graphon 的 H 性质、LP 整数性与哈密顿分解</span>
+          <span class="lang en">Focused on H-property, LP integrality & Hamiltonian decompositions on step-graphons</span>
+        </li>
+        <li><span class="time">2024</span>
+          <span class="lang zh">加入 Chen Lab</span>
+          <span class="lang en">Joined Chen Lab</span>
+        </li>
       </ul>
     </section>
 
@@ -62,13 +78,18 @@
       </ul>
     </section>
 
-    <!-- Publications -->
+    <!-- Publications（卡片 + 配图 + 按钮） -->
     <section id="pubs" class="section">
       <h2><span class="lang zh">论文</span><span class="lang en">Publications</span></h2>
 
       <div class="pub-grid">
         <article class="pub">
-          <div class="thumb"></div>
+          <div class="thumb">
+            <!-- 没有上传配图时显示占位图 -->
+            <img src="assets/papers/h-property.jpg"
+                 alt="H-Property paper thumbnail"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27960%27 height=%27640%27><rect width=%27100%25%27 height=%27100%25%27 fill=%27%23f2f2f2%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23999%27 font-family=%27Arial%27 font-size=%2742%27>Paper Image</text></svg>'">
+          </div>
           <div class="meta">
             <h3>H-Property on Step-Graphons: LP Integrality and Hamiltonian Decompositions</h3>
             <p class="authors">Y. Jiang, X. Chen · <span class="venue">arXiv, 2025</span></p>
@@ -77,8 +98,8 @@
               <span class="lang en">LP integrality and Hamiltonian decompositions for H-property on step-graphons.</span>
             </p>
             <p class="links">
-              <a class="btn" href="#" target="_blank">Paper</a>
-              <a class="btn outline" href="#" target="_blank">Code</a>
+              <a class="btn" href="assets/papers/h-property.pdf" target="_blank">Paper</a>
+              <a class="btn outline" href="https://github.com/your-paper-repo" target="_blank">Code</a>
             </p>
           </div>
         </article>
@@ -106,7 +127,7 @@
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Yiyang Jiang · <span class="lang zh">本页为静态站点骨架</span><span class="lang en">static skeleton</span></p>
+    <p>© <span id="year"></span> Yiyang Jiang · <span class="lang zh">静态站点骨架</span><span class="lang en">static skeleton</span></p>
   </footer>
 </body>
 </html>
