@@ -38,7 +38,17 @@ h1,h2,h3{margin:0 0 10px}
 .cover{position:relative;border-bottom:1px solid var(--line)}
 .cover-bg{height:220px;background:#f6f7f9 center/cover no-repeat}
 .profile-wrapper{background:#fff;margin:-60px auto 0;max-width:var(--maxw);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;display:grid;grid-template-columns:120px 1fr;gap:16px}
-.avatar{width:120px;height:120px;border-radius:16px;object-fit:cover;border:1px solid var(--line)}
+
+/* ✅ 头像：按原比例显示，不裁切 */
+.avatar{
+  width:120px;
+  height:auto;               /* 高度自适应 */
+  object-fit:contain;        /* 不裁切，等比放入盒子 */
+  border-radius:16px;
+  border:1px solid var(--line);
+  background:#fff;           /* 透明底图片更干净 */
+}
+
 .name{font-weight:800;font-size:clamp(20px,3vw,26px);letter-spacing:.2px;overflow-wrap:anywhere}
 .subtitle{color:var(--muted);margin-top:2px}
 .social-media{display:flex;gap:10px;margin-top:10px}
@@ -123,7 +133,8 @@ h1,h2,h3{margin:0 0 10px}
 }
 @media (max-width:760px){
   .profile-wrapper{grid-template-columns:80px 1fr}
-  .avatar{width:80px;height:80px;border-radius:12px}
+  /* ✅ 小屏头像也按比例显示 */
+  .avatar{width:80px;height:auto;border-radius:12px}
   .grid-2-edu{grid-template-columns:1fr}
   .pub{grid-template-columns:1fr}
   .timeline-item{grid-template-columns:90px 1fr}
