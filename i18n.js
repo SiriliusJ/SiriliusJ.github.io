@@ -5,7 +5,6 @@
       "Experience":"<b>经历</b>",
       "Coursework":"<b>课程</b>",
       "Misc":"<b>其他</b>",
-
       "Biography":"<b>简介</b>",
       "Publications":"<b>论文</b>",
       "HonorsAwards":"荣誉与奖项",
@@ -16,22 +15,19 @@
       "Services":"<b>学术服务</b>",
       "Skills":"<b>技能</b>",
       "Languages":"<b>语言</b>",
-
       "SelectedCoursework":"已修课程（精选）",
       "GradCompletedAt":"在（研究生阶段）已修课程",
       "GradAuditedAt":"在（研究生阶段）旁听课程",
       "UndergradCompletedAt":"在（本科阶段）已修课程",
       "PCBuilds":"装机",
       "PhotoWall":"照片墙"
-      /* 其它正文键（AffilLine/Hello/SeeAllCoursework 等）不写 → 中文显示为空 */
+      // 正文键（AffilLine/Hello/SeeAllCoursework 等）不写 → 中文显示为空
     },
-
     ja: {
       "Home":"<b>ホーム</b>",
       "Experience":"<b>経験</b>",
       "Coursework":"<b>履修科目</b>",
       "Misc":"<b>その他</b>",
-
       "Biography":"<b>略歴</b>",
       "Publications":"<b>業績</b>",
       "HonorsAwards":"受賞",
@@ -42,22 +38,19 @@
       "Services":"<b>学術サービス</b>",
       "Skills":"<b>スキル</b>",
       "Languages":"<b>言語</b>",
-
       "SelectedCoursework":"履修科目（抜粋）",
       "GradCompletedAt":"（大学院）履修科目（修了）",
       "GradAuditedAt":"（大学院）履修科目（聴講）",
       "UndergradCompletedAt":"（学部）履修科目（修了）",
       "PCBuilds":"自作PC",
       "PhotoWall":"フォトウォール"
-      /* 正文键留空 */
+      // 正文键留空
     },
-
     en: {
       "Home":"<b>Home</b>",
       "Experience":"<b>Experience</b>",
       "Coursework":"<b>Coursework</b>",
       "Misc":"<b>Misc</b>",
-
       "Biography":"<b>Biography</b>",
       "Publications":"<b>Publications</b>",
       "HonorsAwards":"<b>Honors & Awards</b>",
@@ -68,14 +61,10 @@
       "Services":"<b>Services</b>",
       "Skills":"<b>Skills</b>",
       "Languages":"<b>Languages</b>",
-
-      /* Home 正文（按你的要求改写） */
+      // ✅ 这两行是你刚改的内容
       "AffilLine":"Department of Electrical & Systems Engineering (ESE), Washington University in St. Louis",
-      "Hello":"I’m an M.S. student at Washington University in St. Louis (ESE). My interests center on <b>learning theory</b> and its connections with discrete/continuous optimization; recently I worked on combinatorial optimization and Hamiltonicity on graphons, and earlier explored <b>generative models</b>. I’m generally curious about applying mathematics across domains—especially in engineering— and I am applying for Ph.D. programs for Fall 2026 entry.",
-
+      "Hello":"I’m an M.S. student at Washington University in St. Louis (ESE). My interests center on <b>learning theory</b> and its connections with discrete/continuous optimization; recently I worked on combinatorial optimization and Hamiltonicity on graphons, and earlier explored <b>generative models</b>. I’m generally curious about applying mathematics across domains, especially in engineering. I am applying for Ph.D. programs for Fall 2026 entry.",
       "SeeAllCoursework":"See full coursework →",
-
-      /* Coursework/Misc 标题英文保持 */
       "SelectedCoursework":"Selected Coursework",
       "GradCompletedAt":"Selected graduate-level coursework completed at YOUR UNIVERSITY",
       "GradAuditedAt":"Selected graduate-level coursework audited at YOUR UNIVERSITY",
@@ -89,7 +78,7 @@
   const getLang = () => localStorage.getItem("lang") || "en";
   const setLang = (lang) => localStorage.setItem("lang", lang);
 
-  // ZH/JA：没有写的键显示空；EN 正常
+  // ZH/JA：未设置的键显示空；EN 正常
   function t(lang, key){
     if (lang === "en") return (dict.en[key] || "");
     const L = dict[lang] || {};
