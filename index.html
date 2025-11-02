@@ -7,22 +7,15 @@
   <title>Yiyang Jiang · Home</title>
   <meta name="description" content="Academic homepage of Yiyang Jiang" />
   <link rel="icon" href="images/icon/logo.jpg" />
-
-  <!-- 可选：Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-
-  <!-- Icons（CDN，自带字体） -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="css/custom.css" />
-
   <script src="js/jquery-2.1.3.min.js"></script>
 </head>
 
 <body>
-  <!-- 顶部导航 -->
   <header class="site-header">
     <div class="wrapper">
       <nav class="site-nav">
@@ -42,19 +35,15 @@
     </div>
   </header>
 
-  <!-- 顶部封面 + 名片 -->
   <div id="profile-cover" class="cover">
     <div class="cover-bg" style="background-image:url('images/background/cover.jpg');"></div>
     <div id="profile-namecard" class="profile-wrapper">
       <div class="profile-col profile-col-1">
-        <img id="profile-avatar" class="avatar"
-             src="images/self-portrait/me.png"
-             alt="portrait"
+        <img id="profile-avatar" class="avatar" src="images/self-portrait/me.png" alt="portrait"
              onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27600%27 height=%27600%27><rect width=%27100%25%27 height=%27100%25%27 fill=%27%23f2f2f2%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23999%27 font-family=%27Arial%27 font-size=%2740%27>Avatar</text></svg>'" />
       </div>
       <div class="profile-col profile-col-2">
         <div id="my-name" class="name">Yiyang Jiang（江易扬）</div>
-        <!-- 标题调整：ESE 全称 + WashU 全称；去掉 Chen Lab -->
         <div id="my-title" class="subtitle" data-i18n="AffilLine">Department of Electrical & Systems Engineering (ESE), Washington University in St. Louis</div>
         <div class="social-media">
           <a href="#" class="icon-button" aria-label="Google Scholar" target="_blank" rel="noreferrer"><i class="ai ai-google-scholar ai-2x"></i></a>
@@ -66,16 +55,13 @@
     </div>
   </div>
 
-  <!-- 主体 -->
   <div class="page-content" id="top">
     <div class="wrapper">
 
-      <!-- Biography -->
       <section id="bio" class="section">
         <h1 class="section-title"><i class="fa fa-id-card"></i> <span data-i18n="Biography"><b>Biography</b></span></h1>
 
         <div class="bio-intro">
-          <!-- 第一段：learning theory（去掉 statistical / ML/RL/DL），补两句话 & 26fall 申请 -->
           <p data-i18n="Hello">
             I’m an M.S. student at Washington University in St. Louis (ESE). 
             My interests center on <b>learning theory</b> and its connections with discrete/continuous optimization; recently I worked on combinatorial optimization and Hamiltonicity on graphons, and earlier explored <b>generative models</b>.
@@ -84,9 +70,7 @@
           <p class="muted"><a class="chip" href="coursework.html" data-i18n="SeeAllCoursework">See full coursework →</a></p>
         </div>
 
-        <!-- 左宽右窄：Education（左） / Research topics（右） -->
         <div class="grid-2-edu">
-          <!-- Education（格式：学校一行；学位一行；日期右对齐；含高中） -->
           <div class="card">
             <h3 class="card-title"><i class="fa fa-graduation-cap"></i> <span data-i18n="Education">Education</span></h3>
             <ul class="edu-list">
@@ -111,17 +95,16 @@
                 </div>
               </li>
 
-              <li class="edu-item with-notes">
+              <li class="edu-item">
                 <div class="edu-main">
                   <div class="edu-inst"><b>Xi’an Tieyi High School</b></div>
-                  <div class="edu-degree">Hua Luogeng Science Elite Class, ’19</div>
+                  <div class="edu-degree">Hua Luogeng Science Elite Class</div>
                 </div>
                 <div class="edu-dates">09/2016 — 06/2019</div>
               </li>
             </ul>
           </div>
 
-          <!-- Research Topics（去掉 statistical 前缀） -->
           <div class="card">
             <h3 class="card-title"><i class="fa fa-star"></i> Research Topics</h3>
             <ul class="bullet">
@@ -133,7 +116,6 @@
         </div>
       </section>
 
-      <!-- Publications（占位） -->
       <section id="publications" class="section">
         <h1 class="section-title"><i class="fa fa-file"></i> <span data-i18n="Publications"><b>Publications</b></span></h1>
         <div class="pub-list">
@@ -148,42 +130,46 @@
         </div>
       </section>
 
-      <!-- Honors & Awards（新版排版：标题/描述/右侧日期） -->
+      <!-- Honors & Awards -->
       <section id="awards" class="section">
         <h1 class="section-title"><i class="fa fa-trophy"></i> <span data-i18n="HonorsAwards">Honors & Awards</span></h1>
         <ul class="award-list">
           <li class="award-item">
             <div class="award-main">
               <div class="award-title"><b>ESE Master’s Honors Program</b></div>
-              <div class="award-desc">Research honors track — Washington University in St. Louis</div>
+              <div class="award-desc">Research honors for outstanding ESE master’s students — WUSTL</div>
             </div>
             <div class="award-date">02/2025</div>
           </li>
+
           <li class="award-item">
             <div class="award-main">
               <div class="award-title"><b>Overseas Graduate Studies Fellowship</b></div>
-              <div class="award-desc">Tuition & stipend — UCAS</div>
+              <div class="award-desc">Covers first-year graduate tuition and living expenses abroad; Amount: $90,636 USD — UCAS</div>
             </div>
             <div class="award-date">08/2022</div>
           </li>
+
           <li class="award-item">
             <div class="award-main">
               <div class="award-title"><b>Second-Class Academic Scholarship</b></div>
-              <div class="award-desc">Top 10% — UCAS</div>
+              <div class="award-desc">10%, awarded twice in 2021 and 2022; Amount: 4000 CNY — UCAS</div>
             </div>
             <div class="award-date">10/2021 · 10/2022</div>
           </li>
+
           <li class="award-item">
             <div class="award-main">
               <div class="award-title"><b>Third-Class Academic Scholarship</b></div>
-              <div class="award-desc">Top 20% — UCAS</div>
+              <div class="award-desc">20%; Amount: 2000 CNY — UCAS</div>
             </div>
             <div class="award-date">10/2020</div>
           </li>
+
           <li class="award-item">
             <div class="award-main">
               <div class="award-title"><b>Merit Student</b></div>
-              <div class="award-desc">UCAS</div>
+              <div class="award-desc">University merit award — UCAS</div>
             </div>
             <div class="award-date">03/2020</div>
           </li>
@@ -194,7 +180,6 @@
     </div>
   </div>
 
-  <!-- 页脚 -->
   <footer class="site-footer">
     <div class="wrapper footer-inner">
       <div class="footer-social">
@@ -206,7 +191,6 @@
     </div>
   </footer>
 
-  <!-- 返回顶部（jQuery） -->
   <div class="back-to-top">Top</div>
   <script>
     (function(){
