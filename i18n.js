@@ -65,7 +65,7 @@
       "Languages":"<b>Languages</b>",
       /* Home 正文（英文保留；中/日空） */
       "AffilLine":"Department of Electrical & Systems Engineering (ESE), Washington University in St. Louis",
-      "Hello":"I’m an M.S. student at Washington University in St. Louis (ESE). My interests center on <b>learning theory</b> and its connections with discrete/continuous optimization; recently I worked on combinatorial optimization and Hamiltonicity on graphons, and earlier explored <b>generative models</b>. I’m generally curious about applying mathematics across domains, especially in engineering. I am applying for Ph.D. programs for Fall 2026 entry.",
+      "Hello": "I’m an M.S. student at Washington University in St. Louis (ESE), supervised by Prof. Xudong Chen. My interests center on <b>learning theory</b> and its connections with optimization; recently I worked on combinatorial optimization and Hamiltonicity on graphons, and earlier explored <b>generative models</b>. I’m generally curious about applying mathematics across domains, especially in engineering. I am applying for Ph.D. programs for Fall 2026 entry.",
       "SeeAllCoursework":"See full coursework →",
       "SelectedCoursework":"Selected Coursework",
       "GradCompletedAt":"Selected graduate-level coursework completed at YOUR UNIVERSITY",
