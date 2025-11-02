@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>YOUR NAME · Academic Homepage</title>
-  <meta name="description" content="TODO: your site description" />
+  <title>Yiyang Jiang · Home</title>
+  <meta name="description" content="Academic homepage of Yiyang Jiang" />
   <link rel="icon" href="images/icon/logo.jpg" />
 
-  <!-- 可选：Bootstrap（需要就留） -->
+  <!-- 可选：Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
 
   <!-- Icons（CDN，自带字体） -->
@@ -22,22 +22,19 @@
 </head>
 
 <body>
-  <!-- 顶部导航（支持换行） -->
+  <!-- 顶部导航 -->
   <header class="site-header">
     <div class="wrapper">
       <nav class="site-nav">
-        <a class="brand" href="index.html#top" title="Home">YOUR NAME</a>
+        <a class="brand" href="index.html#top" title="Home">Yiyang Jiang</a>
         <div class="nav-right">
           <div class="lang-switch">
             <button class="lang-btn" data-lang="en">EN</button><span class="sep">/</span>
             <button class="lang-btn" data-lang="zh">中文</button><span class="sep">/</span>
             <button class="lang-btn" data-lang="ja">日本語</button>
           </div>
-          <a class="page-link" href="#bio" data-i18n="Biography"><b>Biography</b></a>
-          <a class="page-link" href="#timeline" data-i18n="Milestone"><b>Milestone</b></a>
-          <a class="page-link" href="#awards" data-i18n="Honors"><b>Honors & Awards</b></a>
-          <a class="page-link" href="#publications" data-i18n="Publications"><b>Publications</b></a>
-          <a class="page-link" href="#teaching" data-i18n="Teaching"><b>Teaching</b></a>
+          <a class="page-link" href="index.html#bio" data-i18n="Home"><b>Home</b></a>
+          <a class="page-link" href="experience.html" data-i18n="Experience"><b>Experience</b></a>
           <a class="page-link" href="coursework.html" data-i18n="Coursework"><b>Coursework</b></a>
           <a class="page-link" href="misc.html" data-i18n="Misc"><b>Misc</b></a>
         </div>
@@ -56,12 +53,13 @@
              onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27600%27 height=%27600%27><rect width=%27100%25%27 height=%27100%25%27 fill=%27%23f2f2f2%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23999%27 font-family=%27Arial%27 font-size=%2740%27>Avatar</text></svg>'" />
       </div>
       <div class="profile-col profile-col-2">
-        <div id="my-name" class="name">YOUR NAME（你的中文名）</div>
-        <div id="my-title" class="subtitle" data-i18n="College">TODO: Affiliation / Lab / Advisor</div>
+        <div id="my-name" class="name">Yiyang Jiang（蒋一扬）</div>
+        <div id="my-title" class="subtitle" data-i18n="AffilLine">M.S. in Engineering Data Analytics & Statistics, Washington University in St. Louis · Chen Lab</div>
         <div class="social-media">
-          <a href="https://scholar.google.com/" class="icon-button" aria-label="Google Scholar" target="_blank" rel="noreferrer"><i class="ai ai-google-scholar ai-2x"></i></a>
-          <a href="https://github.com/yourname" class="icon-button" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa fa-github fa-2x"></i></a>
-          <a href="mailto:you@example.com" class="icon-button" aria-label="Email"><i class="fa fa-envelope fa-2x"></i></a>
+          <a href="#" class="icon-button" aria-label="Google Scholar" target="_blank" rel="noreferrer"><i class="ai ai-google-scholar ai-2x"></i></a>
+          <a href="https://github.com/SiriliusJ" class="icon-button" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa fa-github fa-2x"></i></a>
+          <a href="mailto:j.yiyang@wustl.edu" class="icon-button" aria-label="Email"><i class="fa fa-envelope fa-2x"></i></a>
+          <a href="CV_2026Fall_Phd_Application.pdf" class="icon-button" aria-label="CV" target="_blank" rel="noreferrer" title="CV"><i class="fa fa-file-text fa-2x"></i></a>
         </div>
       </div>
     </div>
@@ -71,86 +69,82 @@
   <div class="page-content" id="top">
     <div class="wrapper">
 
-      <!-- Biography：先整段介绍，再“研究/教育”两列卡片 -->
+      <!-- Biography（先整段介绍） -->
       <section id="bio" class="section">
         <h1 class="section-title"><i class="fa fa-id-card"></i> <span data-i18n="Biography"><b>Biography</b></span></h1>
 
-        <!-- 介绍（整行） -->
         <div class="bio-intro">
-          <p data-i18n="Hello">TODO: Your short bio paragraph (1–3 sentences). Emphasize your strong mathematics coursework if you like.</p>
+          <p data-i18n="Hello">
+            I am an M.S. student in Engineering Data Analytics & Statistics at Washington University in St. Louis. 
+            My current work touches combinatorial optimization and Hamiltonicity on graphons; I’m broadly interested in statistical learning theory across ML/RL/DL, and earlier I explored generative models. 
+            I entered university in 2019 as a physics major and transferred to mathematics in Nov 2020.
+          </p>
           <p class="muted"><a class="chip" href="coursework.html" data-i18n="SeeAllCoursework">See full coursework →</a></p>
-          <div class="placeholder grey-hl">[占位/Placeholder —— 之后替换]</div>
         </div>
 
-        <!-- 两列卡片：Research / Education -->
+        <!-- “研究 / 教育” 两列卡片 -->
         <div class="grid-2">
           <div class="card">
-            <h3 class="card-title"><i class="fa fa-star"></i> <span data-i18n="Research">Research Topics</span></h3>
+            <h3 class="card-title"><i class="fa fa-star"></i> <span data-i18n="Research">Research Topics (current & past)</span></h3>
             <ul class="bullet">
-              <li data-i18n="Machine">TODO: Topic A</li>
-              <li data-i18n="Time">TODO: Topic B</li>
-              <li data-i18n="Multimodal">TODO: Topic C</li>
-              <li data-i18n="Recommendation">TODO: Topic D</li>
+              <li>Statistical learning theory (interests)</li>
+              <li>Combinatorial optimization; integer programming; graphons/Hamiltonicity</li>
+              <li>Generative models (diffusion/score-based, WGAN/IPM)</li>
             </ul>
           </div>
 
           <div class="card">
             <h3 class="card-title"><i class="fa fa-graduation-cap"></i> <span data-i18n="Education">Education</span></h3>
             <ul class="bullet">
-              <li><b data-i18n="Zhejiang">TODO: School A</b> — <span data-i18n="Academic">TODO: Degree / Year</span></li>
-              <li><b data-i18n="Xi">TODO: School B</b> — <span data-i18n="Bachelor">TODO: Degree / Year</span></li>
+              <li><b>Washington University in St. Louis</b> — M.S. in Engineering Data Analytics & Statistics, 09/2024–05/2026 (GPA 4.00/4.00)</li>
+              <li><b>University of Chinese Academy of Sciences</b> — B.S. in Mathematics & Applied Mathematics, 09/2019–06/2023
+                <ul>
+                  <li>Admitted in 2019 as Physics; transferred to Mathematics in Nov 2020.</li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Milestone -->
-      <section id="timeline" class="section">
-        <h1 class="section-title"><i class="fa fa-newspaper-o"></i> <span data-i18n="Milestone"><b>Milestone</b></span></h1>
-        <div class="timeline">
-          <div class="timeline-item" data-i18n="timeline8">
-            <div class="timeline-date">2025-06</div><div class="timeline-title">TODO</div><div class="timeline-desc">TODO</div>
-          </div>
-          <div class="timeline-item" data-i18n="timeline7">
-            <div class="timeline-date">2025-03</div><div class="timeline-title">TODO</div><div class="timeline-desc">TODO</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Honors -->
-      <section id="awards" class="section">
-        <h1 class="section-title"><i class="fa fa-tasks"></i> <span data-i18n="Selected Honors">Selected Honors</span></h1>
-        <ul class="list">
-          <li data-i18n="honor11">TODO: Honor / Award #1</li>
-          <li data-i18n="honor10">TODO: Honor / Award #2</li>
-          <li data-i18n="honor9">TODO: Honor / Award #3</li>
-        </ul>
-      </section>
-
-      <!-- Publications -->
+      <!-- Publications（目前以“Notes / Posters / Working”展示） -->
       <section id="publications" class="section">
         <h1 class="section-title"><i class="fa fa-file"></i> <span data-i18n="Publications"><b>Publications</b></span></h1>
         <div class="pub-list">
-          <h3><strong data-i18n="direction2">[TODO] Direction Title</strong></h3>
           <article class="pub">
             <div class="pub-left">
-              <img class="pub-thumb" src="publications/placeholder.jpg" alt="paper cover" onerror="this.style.display='none'">
+              <img class="pub-thumb" src="publications/placeholder.jpg" alt="cover" onerror="this.style.display='none'">
             </div>
             <div class="pub-right">
-              <div class="pub-title">[TODO] Paper Title</div>
-              <div class="pub-desc">[TODO] One-sentence TLDR.</div>
-              <div class="pub-authors"><b>YOUR NAME</b>, Author 2</div>
-              <div class="pub-venue"><span class="venue">[TODO] Venue, 202X</span></div>
-              <div class="pub-links">[<a class="tag" href="#" target="_blank"><strong>Paper</strong></a>] [<a class="tag" href="#" target="_blank"><strong>Code</strong></a>]</div>
+              <div class="pub-title">Hamiltonicity of Step-graphons</div>
+              <div class="pub-desc">Poster, ESE Day ’25.</div>
+              <div class="pub-links">[<a class="tag" href="#" target="_blank">Slides/PDF</a>]</div>
+            </div>
+          </article>
+
+          <article class="pub">
+            <div class="pub-left">
+              <img class="pub-thumb" src="publications/placeholder.jpg" alt="cover" onerror="this.style.display='none'">
+            </div>
+            <div class="pub-right">
+              <div class="pub-title">H-property for subset of graphon-generated graphs</div>
+              <div class="pub-desc">Poster, Winter Research Symposium ’24.</div>
+              <div class="pub-links">[<a class="tag" href="#" target="_blank">Slides/PDF</a>]</div>
             </div>
           </article>
         </div>
       </section>
 
-      <!-- Teaching -->
-      <section id="teaching" class="section">
-        <h1 class="section-title"><i class="fa fa-graduation-cap"></i> <span data-i18n="Teaching">Teaching & Academic Service</span></h1>
-        <ul class="list"><li>TODO: Course / TA / Term</li><li>TODO: Service</li></ul>
+      <!-- Awards -->
+      <section id="awards" class="section">
+        <h1 class="section-title"><i class="fa fa-trophy"></i> <span data-i18n="Selected Honors">Selected Honors</span></h1>
+        <ul class="list">
+          <li>ESE Master’s Honors Program (research honors), 02/2025 — St. Louis, MO</li>
+          <li>Overseas Graduate Studies Fellowship (tuition + stipend), 08/2022 — Beijing, China</li>
+          <li>Second-Class Academic Scholarship, 10/2021 & 10/2022 — Top 10%</li>
+          <li>Third-Class Academic Scholarship, 10/2020 — Top 20%</li>
+          <li>Merit Student, 03/2020</li>
+        </ul>
       </section>
 
       <p class="top"><a href="#top">↑ Top</a></p>
@@ -161,11 +155,11 @@
   <footer class="site-footer">
     <div class="wrapper footer-inner">
       <div class="footer-social">
-        <a href="https://scholar.google.com/" class="icon-button" aria-label="Google Scholar" target="_blank" rel="noreferrer"><i class="ai ai-google-scholar-square ai-2x"></i></a>
-        <a href="https://github.com/yourname" class="icon-button" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa fa-github fa-2x"></i></a>
-        <a href="mailto:you@example.com" class="icon-button" aria-label="Email"><i class="fa fa-envelope fa-2x"></i></a>
+        <a href="#" class="icon-button" aria-label="Google Scholar" target="_blank" rel="noreferrer"><i class="ai ai-google-scholar-square ai-2x"></i></a>
+        <a href="https://github.com/SiriliusJ" class="icon-button" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa fa-github fa-2x"></i></a>
+        <a href="mailto:j.yiyang@wustl.edu" class="icon-button" aria-label="Email"><i class="fa fa-envelope fa-2x"></i></a>
       </div>
-      <div class="footer-text">Layout skeleton with placeholders — feel free to replace.</div>
+      <div class="footer-text">This site uses a multilingual skeleton. Replace placeholders freely.</div>
     </div>
   </footer>
 
@@ -183,3 +177,4 @@
   <script src="i18n.js"></script>
 </body>
 </html>
+
