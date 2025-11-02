@@ -29,7 +29,7 @@
         <a class="brand" href="index.html#top" title="Home">Yiyang Jiang</a>
         <div class="nav-right">
           <div class="lang-switch">
-            <button class="lang-btn" data-lang="en">ENGLISH</button><span class="sep">/</span>
+            <button class="lang-btn" data-lang="en">EN</button><span class="sep">/</span>
             <button class="lang-btn" data-lang="zh">中文</button><span class="sep">/</span>
             <button class="lang-btn" data-lang="ja">日本語</button>
           </div>
@@ -53,8 +53,9 @@
              onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27600%27 height=%27600%27><rect width=%27100%25%27 height=%27100%25%27 fill=%27%23f2f2f2%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23999%27 font-family=%27Arial%27 font-size=%2740%27>Avatar</text></svg>'" />
       </div>
       <div class="profile-col profile-col-2">
-        <div id="my-name" class="name">Yiyang Jiang（江易扬）</div>
-        <div id="my-title" class="subtitle" data-i18n="AffilLine">Current M.S. in Engineering Data Analytics & Statistics, Washington University in St. Louis </div>
+        <div id="my-name" class="name">Yiyang Jiang（蒋一扬）</div>
+        <!-- 标题调整：ESE 全称 + WashU 全称；去掉 Chen Lab -->
+        <div id="my-title" class="subtitle" data-i18n="AffilLine">Department of Electrical & Systems Engineering (ESE), Washington University in St. Louis</div>
         <div class="social-media">
           <a href="#" class="icon-button" aria-label="Google Scholar" target="_blank" rel="noreferrer"><i class="ai ai-google-scholar ai-2x"></i></a>
           <a href="https://github.com/SiriliusJ" class="icon-button" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa fa-github fa-2x"></i></a>
@@ -69,69 +70,132 @@
   <div class="page-content" id="top">
     <div class="wrapper">
 
-      <!-- Biography（先整段介绍） -->
+      <!-- Biography -->
       <section id="bio" class="section">
         <h1 class="section-title"><i class="fa fa-id-card"></i> <span data-i18n="Biography"><b>Biography</b></span></h1>
 
         <div class="bio-intro">
+          <!-- 第一段：learning theory（去掉 statistical / ML/RL/DL），补两句话 & 26fall 申请 -->
           <p data-i18n="Hello">
-            I am an M.S. student in Engineering Data Analytics & Statistics at Washington University in St. Louis. 
-            My current work touches combinatorial optimization and Hamiltonicity on graphons. I’m broadly interested in statistical learning theory across ML/RL/DL, and earlier I explored generative models. 
+            I’m an M.S. student at Washington University in St. Louis (ESE). 
+            My interests center on <b>learning theory</b> and its connections with discrete/continuous optimization; recently I worked on combinatorial optimization and Hamiltonicity on graphons, and earlier explored <b>generative models</b>.
+            I’m generally curious about applying mathematics across domains—especially in engineering— and I am applying for Ph.D. programs for Fall 2026 entry.
           </p>
           <p class="muted"><a class="chip" href="coursework.html" data-i18n="SeeAllCoursework">See full coursework →</a></p>
         </div>
 
-        <!-- “研究 / 教育” 两列卡片 -->
-        <div class="grid-2">
+        <!-- 左宽右窄：Education（左） / Research topics（右） -->
+        <div class="grid-2-edu">
+          <!-- Education（格式：学校一行；学位一行；日期右对齐；含高中） -->
           <div class="card">
-            <h3 class="card-title"><i class="fa fa-star"></i> <span data-i18n="Research">Research Topics (current & past)</span></h3>
-            <ul class="bullet">
-              <li>Statistical learning theory </li>
-              <li>Combinatorial optimization; integer programming; random graphs and graphons; Hamiltonicity</li>
-              <li>Generative models (diffusion/score-based, WGAN)</li>
+            <h3 class="card-title"><i class="fa fa-graduation-cap"></i> <span data-i18n="Education">Education</span></h3>
+            <ul class="edu-list">
+              <li class="edu-item">
+                <div class="edu-main">
+                  <div class="edu-inst"><b>Washington University in St. Louis</b></div>
+                  <div class="edu-degree">M.S., Engineering Data Analytics & Statistics (ESE)</div>
+                </div>
+                <div class="edu-dates">09/2024 — 05/2026</div>
+              </li>
+
+              <li class="edu-item with-notes">
+                <div class="edu-main">
+                  <div class="edu-inst"><b>University of Chinese Academy of Sciences</b></div>
+                  <div class="edu-degree">B.S., Mathematics & Applied Mathematics</div>
+                </div>
+                <div class="edu-dates">09/2019 — 06/2023</div>
+                <div class="edu-notes">
+                  <ul class="edu-sublist">
+                    <li>Admitted in 2019 as Physics; transferred to Mathematics in Nov 2020.</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="edu-item with-notes">
+                <div class="edu-main">
+                  <div class="edu-inst"><b>Xi’an Tieyi High School</b></div>
+                  <div class="edu-degree">Hua Luogeng Science Elite Class, ’19</div>
+                </div>
+                <div class="edu-dates">—</div>
+              </li>
             </ul>
           </div>
 
+          <!-- Research Topics（去掉 statistical 前缀） -->
           <div class="card">
-            <h3 class="card-title"><i class="fa fa-graduation-cap"></i> <span data-i18n="Education">Education</span></h3>
+            <h3 class="card-title"><i class="fa fa-star"></i> Research Topics</h3>
             <ul class="bullet">
-              <li><b>Washington University in St. Louis</b> — M.S. in Engineering Data Analytics & Statistics, 09/2024–05/2026 </li>
-              <li><b>University of Chinese Academy of Sciences</b> — B.S. in Mathematics & Applied Mathematics, 09/2019–06/2023
-                <ul>
-                  <li>Admitted in 2019 as Physics; transferred to Mathematics in Nov 2020.</li>
-                </ul>
-              </li>
+              <li>Learning theory (interests)</li>
+              <li>Combinatorial optimization; integer programming; graphons/Hamiltonicity</li>
+              <li>Generative models (diffusion/score-based, WGAN/IPM)</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Publications（目前以“Notes / Posters / Working”展示） -->
+      <!-- Publications（占位） -->
       <section id="publications" class="section">
         <h1 class="section-title"><i class="fa fa-file"></i> <span data-i18n="Publications"><b>Publications</b></span></h1>
         <div class="pub-list">
           <article class="pub">
-            <div class="pub-left">
-              <img class="pub-thumb" src="publications/placeholder.jpg" alt="cover" onerror="this.style.display='none'">
-            </div>
+            <div class="pub-left"><img class="pub-thumb" src="publications/placeholder.jpg" alt="cover" onerror="this.style.display='none'"></div>
             <div class="pub-right">
               <div class="pub-title">Hamiltonicity of Step-graphons</div>
               <div class="pub-desc">Poster, ESE Day ’25.</div>
               <div class="pub-links">[<a class="tag" href="#" target="_blank">Slides/PDF</a>]</div>
             </div>
           </article>
+
+          <article class="pub">
+            <div class="pub-left"><img class="pub-thumb" src="publications/placeholder.jpg" alt="cover" onerror="this.style.display='none'"></div>
+            <div class="pub-right">
+              <div class="pub-title">H-property for subset of graphon-generated graphs</div>
+              <div class="pub-desc">Poster, Winter Research Symposium ’24.</div>
+              <div class="pub-links">[<a class="tag" href="#" target="_blank">Slides/PDF</a>]</div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <!-- Awards -->
+      <!-- Honors & Awards（新版排版：标题/描述/右侧日期） -->
       <section id="awards" class="section">
-        <h1 class="section-title"><i class="fa fa-trophy"></i> <span data-i18n="Selected Honors">Selected Honors</span></h1>
-        <ul class="list">
-          <li>ESE Master’s Honors Program, 02/2025 — St. Louis, MO</li>
-          <li>Overseas Graduate Studies Fellowship, 08/2022 — Beijing, China</li>
-          <li>Second-Class Academic Scholarship, 10/2021 & 10/2022 — 10%</li>
-          <li>Third-Class Academic Scholarship, 10/2020 — 20%</li>
-          <li>Merit Student, 03/2020</li>
+        <h1 class="section-title"><i class="fa fa-trophy"></i> <span data-i18n="HonorsAwards">Honors & Awards</span></h1>
+        <ul class="award-list">
+          <li class="award-item">
+            <div class="award-main">
+              <div class="award-title"><b>ESE Master’s Honors Program</b></div>
+              <div class="award-desc">Research honors track — Washington University in St. Louis</div>
+            </div>
+            <div class="award-date">02/2025</div>
+          </li>
+          <li class="award-item">
+            <div class="award-main">
+              <div class="award-title"><b>Overseas Graduate Studies Fellowship</b></div>
+              <div class="award-desc">Tuition & stipend — UCAS</div>
+            </div>
+            <div class="award-date">08/2022</div>
+          </li>
+          <li class="award-item">
+            <div class="award-main">
+              <div class="award-title"><b>Second-Class Academic Scholarship</b></div>
+              <div class="award-desc">Top 10% — UCAS</div>
+            </div>
+            <div class="award-date">10/2021 · 10/2022</div>
+          </li>
+          <li class="award-item">
+            <div class="award-main">
+              <div class="award-title"><b>Third-Class Academic Scholarship</b></div>
+              <div class="award-desc">Top 20% — UCAS</div>
+            </div>
+            <div class="award-date">10/2020</div>
+          </li>
+          <li class="award-item">
+            <div class="award-main">
+              <div class="award-title"><b>Merit Student</b></div>
+              <div class="award-desc">UCAS</div>
+            </div>
+            <div class="award-date">03/2020</div>
+          </li>
         </ul>
       </section>
 
@@ -165,4 +229,3 @@
   <script src="i18n.js"></script>
 </body>
 </html>
-
