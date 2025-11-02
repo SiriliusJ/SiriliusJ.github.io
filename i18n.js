@@ -6,8 +6,9 @@
       "Coursework":"<b>课程</b>",
       "Misc":"<b>其他</b>",
       "Biography":"<b>简介</b>",
+      "Education":"<b>教育经历</b>",
       "Publications":"<b>论文</b>",
-      "HonorsAwards":"荣誉与奖项",
+      "HonorsAwards":"<b>荣誉与奖项</b>",
       "Milestone":"<b>里程碑</b>",
       "Teaching":"<b>教学与指导</b>",
       "Presentations":"<b>报告与展示</b>",
@@ -29,8 +30,9 @@
       "Coursework":"<b>履修科目</b>",
       "Misc":"<b>その他</b>",
       "Biography":"<b>略歴</b>",
+      "Education":"<b>学歴</b>",
       "Publications":"<b>業績</b>",
-      "HonorsAwards":"受賞",
+      "HonorsAwards":"<b>受賞</b>",
       "Milestone":"<b>マイルストーン</b>",
       "Teaching":"<b>教育・指導</b>",
       "Presentations":"<b>発表</b>",
@@ -44,7 +46,6 @@
       "UndergradCompletedAt":"（学部）履修科目（修了）",
       "PCBuilds":"自作PC",
       "PhotoWall":"フォトウォール"
-      // 正文键留空
     },
     en: {
       "Home":"<b>Home</b>",
@@ -52,6 +53,7 @@
       "Coursework":"<b>Coursework</b>",
       "Misc":"<b>Misc</b>",
       "Biography":"<b>Biography</b>",
+      "Education":"<b>Education</b>",
       "Publications":"<b>Publications</b>",
       "HonorsAwards":"<b>Honors & Awards</b>",
       "Milestone":"<b>Milestone</b>",
@@ -61,7 +63,7 @@
       "Services":"<b>Services</b>",
       "Skills":"<b>Skills</b>",
       "Languages":"<b>Languages</b>",
-      // ✅ 这两行是你刚改的内容
+      /* Home 正文（英文保留；中/日空） */
       "AffilLine":"Department of Electrical & Systems Engineering (ESE), Washington University in St. Louis",
       "Hello":"I’m an M.S. student at Washington University in St. Louis (ESE). My interests center on <b>learning theory</b> and its connections with discrete/continuous optimization; recently I worked on combinatorial optimization and Hamiltonicity on graphons, and earlier explored <b>generative models</b>. I’m generally curious about applying mathematics across domains, especially in engineering. I am applying for Ph.D. programs for Fall 2026 entry.",
       "SeeAllCoursework":"See full coursework →",
@@ -78,7 +80,7 @@
   const getLang = () => localStorage.getItem("lang") || "en";
   const setLang = (lang) => localStorage.setItem("lang", lang);
 
-  // ZH/JA：未设置的键显示空；EN 正常
+  // ZH/JA 未设置键显示空；EN 正常
   function t(lang, key){
     if (lang === "en") return (dict.en[key] || "");
     const L = dict[lang] || {};
