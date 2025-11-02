@@ -34,82 +34,9 @@ h1,h2,h3{margin:0 0 10px}
 .lang-btn{border:0;background:transparent;cursor:pointer;color:#333;padding:0 2px}
 .lang-btn.active{font-weight:700;color:#000}
 
-/* 顶部封面 + 名片：标题自适应 */
+/* 封面名片 */
 .cover{position:relative;border-bottom:1px solid var(--line)}
 .cover-bg{height:220px;background:#f6f7f9 center/cover no-repeat}
 .profile-wrapper{background:#fff;margin:-60px auto 0;max-width:var(--maxw);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;display:grid;grid-template-columns:120px 1fr;gap:16px}
 .avatar{width:120px;height:120px;border-radius:16px;object-fit:cover;border:1px solid var(--line)}
-.name{font-weight:800;font-size:clamp(20px,3vw,26px);letter-spacing:.2px;overflow-wrap:anywhere}
-.subtitle{color:var(--muted);margin-top:2px}
-.social-media{display:flex;gap:10px;margin-top:10px}
-.icon-button{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:9px;background:var(--chip-bg);color:#333;text-decoration:none}
-.icon-button:hover{filter:brightness(.96)}
-
-/* Biography：介绍 + 两列卡片 */
-.bio-intro{margin-bottom:16px}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.card{border:1px solid var(--line);border-radius:10px;padding:14px;background:#fff}
-.card-title{display:flex;align-items:center;gap:8px;margin:0 0 6px}
-.bullet{margin:8px 0 0}
-
-/* 时间轴 */
-.timeline{display:grid;gap:10px}
-.timeline-item{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:10px;border:1px solid var(--line);border-radius:10px;background:#fff}
-.timeline-date{color:var(--muted)}
-.timeline-title{font-weight:700}
-.timeline-desc{color:#333}
-
-/* 论文卡片 */
-.pub-list{display:grid;gap:14px}
-.pub{display:grid;grid-template-columns:140px 1fr;gap:14px;border:1px solid var(--line);border-radius:10px;background:#fff;padding:14px}
-.pub-thumb{width:100%;height:100px;object-fit:cover;border-radius:8px;background:#f2f2f2}
-.pub-title{font-weight:700;margin-bottom:4px}
-.pub-desc{color:#333;margin-bottom:6px}
-.pub-authors{font-size:.95rem;margin-bottom:6px}
-.pub-venue .venue{background:var(--chip-bg);padding:2px 8px;border-radius:999px}
-.pub-links .tag{color:var(--accent);text-decoration:none}
-.pub-links .tag:hover{text-decoration:underline}
-
-/* Coursework 页面 */
-.cw-page main.wrapper{padding-top:24px}
-.cw-block{margin:24px 0}
-.cw-block h3{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 8px}
-.cw-dates{color:var(--muted);font-size:.95rem}
-.cw-list{margin:0;padding-left:18px}
-
-/* Misc：卡片网格 + 照片墙 */
-.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.card-thumb{width:100%;height:120px;object-fit:cover;border-radius:8px;background:#f2f2f2}
-.card-body{margin-top:8px}
-.card-links a{color:var(--accent);text-decoration:none}
-.card-links a:hover{text-decoration:underline}
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-.gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px;background:#f2f2f2}
-
-/* Top 返回 & 页脚 */
-.top{text-align:right;margin:18px 0}
-.site-footer{border-top:1px solid var(--line);padding:18px 0;margin-top:24px}
-.footer-inner{display:flex;align-items:center;gap:16px;justify-content:space-between}
-.footer-text{color:var(--muted)}
-.back-to-top{position:fixed;right:20px;bottom:24px;display:none;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:#111827;color:#fff;cursor:pointer;box-shadow:var(--shadow);font-weight:700}
-
-/* 打印优化 */
-@media print{
-  .site-header,.back-to-top{display:none}
-  .section{border:0;padding:18px 0}
-  .wrapper{max-width:none}
-}
-
-/* 响应式 */
-@media (max-width:960px){
-  .nav-right{width:100%;order:3;justify-content:flex-start}
-}
-@media (max-width:760px){
-  .profile-wrapper{grid-template-columns:80px 1fr}
-  .avatar{width:80px;height:80px;border-radius:12px}
-  .grid-2{grid-template-columns:1fr}
-  .pub{grid-template-columns:1fr}
-  .timeline-item{grid-template-columns:90px 1fr}
-  .card-grid{grid-template-columns:1fr 1fr}
-  .gallery{grid-template-columns:1fr 1fr}
-}
+.name{font-weight:800;font-size:clamp(20px,3vw,26px);le
