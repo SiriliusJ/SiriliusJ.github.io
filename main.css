@@ -164,17 +164,29 @@ h1,h2,h3{margin:0 0 10px}
   .gallery{grid-template-columns:1fr 1fr}
 }
 
-/* Equivalence chip（≈ …） */
+/* —— Coursework: clickable course row —— */
+.cw-course summary {
+  display: flex; align-items: baseline; gap: 8px;
+  cursor: pointer; list-style: none;
+}
+.cw-course summary::-webkit-details-marker { display: none; }  /* 隐藏默认三角 */
+
+.cw-title { font-weight: 600; }
+
+/* 等价小气泡（≈ …）——你已有 tag-gray，这里专门用于“等价/覆盖范围” */
 .tag-eq{
   display:inline-block; margin-left:6px; padding:2px 8px;
   font-size:12px; border-radius:999px; white-space:nowrap;
   background:#eef2ff; border:1px solid #c7d2fe; color:#1f2937;
 }
 
-/* Collapsible details（无 JS 原生折叠） */
-.cw-more{ margin:4px 0 0 }
-.cw-more > summary{ cursor:pointer; color:#374151; font-weight:600 }
-.cw-more[open] > summary{ margin-bottom:4px }
+/* 右侧小箭头 */
+.cw-caret { margin-left: auto; color:#6b7280; transition: transform .15s; }
+.cw-more[open] .cw-caret { transform: rotate(180deg); }
 
-.cw-subtopics{ margin:4px 0 4px 18px; padding:0 }
-.cw-subtopics li{ margin:1px 0 }
+/* 展开后的内容 */
+.cw-body { margin-top: 6px; }
+.cw-subtopics{ margin:4px 0 4px 18px; padding:0; }
+.cw-subtopics li{ margin:1px 0; }
+.cw-note{ color:#555; font-style:italic; }
+
