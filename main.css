@@ -190,3 +190,6 @@ h1,h2,h3{margin:0 0 10px}
 .cw-subtopics li{ margin:1px 0; }
 .cw-note{ color:#555; font-style:italic; }
 
+/* Textbooks list (line-broken, compact) */
+.cw-books{ margin:4px 0 6px 18px; padding:0; }
+.cw-books li{ margin:2px 0; list-style:disc; }
