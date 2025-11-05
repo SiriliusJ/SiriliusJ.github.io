@@ -383,25 +383,26 @@
 </li>
       </div>
 
-      <p class="muted" style="margin-top:18px">* This is a selected list. I may add equivalences or textbooks later.</p>
-    </section>
-  </main>
+</section>
+</main>
 
-  <footer class="site-footer">
-    <div class="wrapper footer-inner"><div class="footer-text">Coursework page — English-only titles.</div></div>
-  </footer>
+<footer class="site-footer">
+  <div class="wrapper footer-inner">
+    <div class="footer-text">Coursework — English titles.</div>
+  </div>
+</footer>
 
-  <div class="back-to-top">Top</div>
-  <script>
-    (function(){
-      var $btn = $('.back-to-top');
-      function sync(){ $btn.toggle($(window).scrollTop() > 220); }
-      $(window).on('scroll', sync); sync();
-      $btn.on('click', function(e){ e.preventDefault(); $('html,body').animate({scrollTop:0}, 300); });
-    })();
-  </script>
+<div class="back-to-top">Top</div>
+<script>
+  (function(){
+    var $btn = $('.back-to-top');
+    function sync(){ $btn.toggle($(window).scrollTop() > 220); }
+    $(window).on('scroll', sync); sync();
+    $btn.on('click', function(e){ e.preventDefault(); $('html,body').animate({scrollTop:0}, 300); });
+  })();
+</script>
 
-  <!-- i18n for nav only (your existing file) -->
-  <script src="i18n.js"></script>
+<!-- i18n for nav only (your existing file) -->
+<script src="i18n.js"></script>
 </body>
 </html>
