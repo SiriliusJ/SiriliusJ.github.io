@@ -223,3 +223,43 @@ h1,h2,h3{margin:0 0 10px}
 
 @media (max-width:900px){ .lang-grid{ grid-template-columns:repeat(2,1fr);} }
 @media (max-width:560px){ .lang-grid{ grid-template-columns:1fr; } }
+
+/* ===== Milestone timeline ===== */
+.mls{ position:relative; padding:10px 0 4px; }
+.mls-axis{
+  position:absolute; left:50%; top:0; bottom:0;
+  width:2px; background:var(--line);
+}
+.mls-item{ position:relative; margin:18px 0; }
+.mls-item::after{ content:""; display:block; clear:both; }
+
+.mls-dot{
+  position:absolute; left:50%; top:10px; transform:translateX(-50%);
+  width:10px; height:10px; border-radius:50%; background:#111; box-shadow:0 0 0 3px #fff;
+}
+
+/* content cards */
+.mls-card{ max-width:46%; }
+.side-left  .mls-card{ float:left;  text-align:right; padding-right:24px; }
+.side-right .mls-card{ float:right; text-align:left;  padding-left:24px; }
+
+.mls-date{ color:#374151; font-weight:700; margin-bottom:4px; }
+.mls-title{ font-weight:700; }
+.mls-desc{ color:#4b5563; }
+
+/* colored badges */
+.mls-badge{
+  display:inline-block; margin-right:8px; padding:2px 8px; font-size:12px;
+  border-radius:999px; border:1px solid transparent; white-space:nowrap;
+}
+.is-award    { background:#fff7ed; border-color:#fdba74; color:#9a3412; }   /* orange */
+.is-research { background:#eff6ff; border-color:#93c5fd; color:#1e3a8a; }   /* blue */
+.is-admission{ background:#ecfeff; border-color:#67e8f9; color:#155e75; }   /* cyan */
+.is-exam     { background:#f0fdf4; border-color:#86efac; color:#166534; }   /* green */
+
+/* responsive: stack left/right into one column */
+@media (max-width:760px){
+  .mls-axis{ left:18px; }
+  .mls-dot{ left:18px; transform:none; }
+  .mls-card{ float:none; max-width:none; padding-left:36px; padding-right:0; text-align:left; }
+}
