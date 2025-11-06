@@ -218,7 +218,7 @@ h1,h2,h3{margin:0 0 10px}
   background:#fff;
 }
 .lang-item{ padding:6px 8px; }
-.lang-name{ color:#dc2626; font-weight:700; font-size:20px; margin-bottom:4px; }
+.lang-name{ color:#111; font-weight:700; font-size:20px; margin-bottom:4px; }
 .lang-level{ color:#111; font-weight:600; }
 
 @media (max-width:900px){ .lang-grid{ grid-template-columns:repeat(2,1fr);} }
