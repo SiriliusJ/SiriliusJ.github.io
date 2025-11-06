@@ -193,3 +193,14 @@ h1,h2,h3{margin:0 0 10px}
 /* Textbooks list (line-broken, compact) */
 .cw-books{ margin:4px 0 6px 18px; padding:0; }
 .cw-books li{ margin:2px 0; list-style:disc; }
+
+/* 链接在“描述行”里的外观与可读性 */
+.ext-link{ color:inherit; text-decoration:underline; text-underline-offset:2px }
+.ext-link:hover{ text-decoration:underline }
+
+/* 绿色标签（类似你课程页的蓝/灰芯片） */
+.tag-green{
+  display:inline-block; margin-left:8px; padding:2px 8px;
+  font-size:12px; border-radius:999px; white-space:nowrap;
+  background:#dcfce7; border:1px solid #86efac; color:#065f46;  /* 浅绿 + 深绿字 */
+}
