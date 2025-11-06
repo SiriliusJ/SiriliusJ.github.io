@@ -204,3 +204,22 @@ h1,h2,h3{margin:0 0 10px}
   font-size:12px; border-radius:999px; white-space:nowrap;
   background:#dcfce7; border:1px solid #86efac; color:#065f46;  /* 浅绿 + 深绿字 */
 }
+
+/* 更紧凑的列表行距（用于 Services 分组） */
+.tight-list li{ margin:2px 0; }
+
+/* Skills 行：chip 自动换行 */
+.skill-line{ display:flex; flex-wrap:wrap; gap:6px; margin:4px 0; }
+
+/* Languages 卡片式三列（小屏改为两列/一列） */
+.lang-grid{
+  display:grid; gap:18px; grid-template-columns:repeat(3,1fr);
+  border:1px solid var(--line); border-radius:12px; padding:18px;
+  background:#fff;
+}
+.lang-item{ padding:6px 8px; }
+.lang-name{ color:#dc2626; font-weight:700; font-size:20px; margin-bottom:4px; }
+.lang-level{ color:#111; font-weight:600; }
+
+@media (max-width:900px){ .lang-grid{ grid-template-columns:repeat(2,1fr);} }
+@media (max-width:560px){ .lang-grid{ grid-template-columns:1fr; } }
