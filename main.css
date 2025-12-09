@@ -136,6 +136,19 @@ h1,h2,h3{margin:0 0 10px}
 .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
 .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px;background:#f2f2f2}
 
+/* PC Builds: force one card per row (5 rows for 5 builds) */
+.card-grid.pc-grid{ grid-template-columns: 1fr; }
+
+/* PC Builds: bigger image since we now have full width */
+.pc-card .card-thumb{ height: 220px; }
+
+@media (max-width:760px){
+  .pc-card .card-thumb{ height: 180px; }
+}
+
+/* Optional: give labels more room */
+.pc-spec-grid{ grid-template-columns: 140px 1fr; }
+
 /* PC build spec block (Misc page) */
 .pc-intro{ margin: 0 0 12px; }
 .pc-meta{ margin: 2px 0 6px; }
