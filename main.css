@@ -191,6 +191,31 @@ h1,h2,h3{margin:0 0 10px}
 .pc-spec-link{ margin:0 0 8px; }
 .pc-spec-note{ margin:8px 0 0; }
 
+/* ===== PC cards: text left + photo right ===== */
+.misc-page .pc-card{
+  display:grid;
+  grid-template-columns: 1fr minmax(260px, 360px);
+  grid-template-areas: "body img";
+  gap:14px;
+  align-items:start;
+}
+
+.misc-page .pc-card .card-body{ grid-area: body; margin-top:0; }
+.misc-page .pc-card .card-thumb{
+  grid-area: img;
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width:760px){
+  .misc-page .pc-card{
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "body";
+  }
+  .misc-page .pc-card .card-thumb{ height: 200px; }
+}
 
 /* Top & footer */
 .top{text-align:right;margin:18px 0}
