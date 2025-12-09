@@ -106,9 +106,15 @@
       "ComputerScience":"Computer Science",
 
       /* Misc 标题保留 */
-      "PCBuilds":"PC Builds",
-      "PhotoWall":"Photo Wall",
-      "PhotoWallIntro":"A casual wall of memorable moments."
+"PCBuilds":"PC Builds",
+"PhotoWall":"Photo Wall",
+"PhotoWallIntro":"A casual wall of memorable moments.",
+
+"BuildEarliest":"Earliest PC Build",
+"BuildMostExpensive":"Most Expensive Build",
+"BuildSchool":"Campus Build",
+"BuildUSScavenged":"US Budget/Scavenged Build",
+"BuildLab":"Lab Workstation Build"
     }
   };
 
