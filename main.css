@@ -71,7 +71,10 @@ h1,h2,h3{margin:0 0 10px}
 .edu-notes{grid-area:notes;color:var(--muted)}
 .edu-inst{font-weight:700}
 .edu-degree{color:#333}
-.edu-sublist{margin:4px 0 0 18px}
+.edu-sublist{
+  margin: 4px 0 0 0;
+  padding-left: 12px;
+}
 
 /* Timeline (Experience page) */
 .timeline{display:grid;gap:10px}
