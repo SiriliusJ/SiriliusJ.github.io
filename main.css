@@ -399,15 +399,17 @@ h1,h2,h3{margin:0 0 10px}
 }
 
 .clustrmaps-container{
-  max-width: 560px;   /* 想更大就改这里，比如 700 */
   width: 100%;
+  max-width: 560px;   /* 想更宽就改这里：700 / 900 都行 */
 }
 
-/* in case it renders img/canvas/iframe */
+/* in case widget renders as img/canvas/iframe */
 .clustrmaps-container img,
 .clustrmaps-container canvas,
 .clustrmaps-container iframe{
   max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 
