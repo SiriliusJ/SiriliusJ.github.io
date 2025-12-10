@@ -436,3 +436,18 @@ h1,h2,h3{margin:0 0 10px}
   height: auto;
   display: block;
 }
+
+@media (max-width:760px){
+  /* 时间轴靠左 */
+  .mls-axis{ left:18px; }
+  .mls-dot{ left:18px; transform:none; }
+
+  /* 所有左右项合并成一列，左对齐 */
+  .mls-item .mls-card{
+    float:none;
+    max-width:none;
+    padding-left:36px;
+    padding-right:0;
+    text-align:left;
+  }
+}
