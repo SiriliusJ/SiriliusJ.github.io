@@ -409,3 +409,25 @@ h1,h2,h3{margin:0 0 10px}
 .clustrmaps-container iframe{
   max-width: 100%;
 }
+
+
+/* Research capsule map: can exceed the 900px text column, but never overflow viewport */
+.capsule-bleed{
+  margin-top: 14px;
+  margin-bottom: 6px;
+
+  /* 关键：让一个“更宽的块”仍然以页面中心对齐 */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* 关键：宽度上限控制，避免横向滚动条
+     36px = wrapper 的左右 padding (18px * 2)，保证两侧留白一致 */
+  width: min(1400px, calc(100vw - 36px));
+}
+
+.capsule-img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
