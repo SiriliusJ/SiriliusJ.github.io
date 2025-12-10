@@ -377,3 +377,16 @@ h1,h2,h3{margin:0 0 10px}
   .mls-dot{ left:18px; transform:none; }
   .mls-card{ float:none; max-width:none; padding-left:36px; padding-right:0; text-align:left; }
 }
+
+/* Fix milestone alignment: prevent float shrink-to-fit */
+.exp-page .mls-card{
+  width:46%;
+  max-width:46%;
+}
+
+@media (max-width:760px){
+  .exp-page .mls-card{
+    width:auto;   /* 手机上还是一列铺满 */
+    max-width:none;
+  }
+}
