@@ -400,7 +400,7 @@ h1,h2,h3{margin:0 0 10px}
 
 .clustrmaps-container{
   width: 100%;
-  max-width: 560px;   /* 想更宽就改这里：700 / 900 都行 */
+  max-width: 400px;   /* 想更宽就改这里：700 / 900 都行 */
 }
 
 /* in case widget renders as img/canvas/iframe */
