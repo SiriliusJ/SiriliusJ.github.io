@@ -390,3 +390,22 @@ h1,h2,h3{margin:0 0 10px}
     max-width:none;
   }
 }
+
+/* Footer: ClustrMaps */
+.footer-clustrmaps{
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.clustrmaps-container{
+  max-width: 560px;   /* 想更大就改这里，比如 700 */
+  width: 100%;
+}
+
+/* in case it renders img/canvas/iframe */
+.clustrmaps-container img,
+.clustrmaps-container canvas,
+.clustrmaps-container iframe{
+  max-width: 100%;
+}
