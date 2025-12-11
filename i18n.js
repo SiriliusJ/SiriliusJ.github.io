@@ -113,9 +113,8 @@
 
 "BuildEarliest":"Earliest PC Build",
 "BuildMostExpensive":"Most Expensive Build",
-"BuildSchool":"Campus Build",
-"BuildUSScavenged":"US Budget/Scavenged Build",
-"BuildLab":"Lab Workstation Build"
+"BuildUSScavenged":"Scavenged Build",
+"BuildLab":"XXX Build"
     }
   };
 
