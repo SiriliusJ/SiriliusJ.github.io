@@ -145,24 +145,24 @@ h1,h2,h3{margin:0 0 10px}
 /* PC Builds: bigger image since we now have full width */
 .pc-card .card-thumb{ height: 220px; }
 
-/* Photo Wall: single large photo + collapsible story */
+/* Photo Wall: full-width photo, caption & story below */
 .photo-row{
-  display:grid;
-  grid-template-columns:minmax(0, 3fr) minmax(0, 4fr); /* 左图右文 */
-  gap:16px;
-  align-items:flex-start;
   margin-top:16px;
 }
 
+/* 图片占一整行 */
 .photo-main{
+  display:block;
   width:100%;
-  max-height:380px;      /* 想更大可以调高这行高度 */
+  max-height:420px;        /* 想再高一点就调这个，比如 460 */
   object-fit:cover;
-  border-radius:12px;
+  border-radius:16px;
   background:#f2f2f2;
 }
 
+/* 标题 + 副标题 + Story 按钮，都在图片下面竖排 */
 .photo-text{
+  margin-top:10px;
   display:flex;
   flex-direction:column;
   gap:6px;
@@ -178,17 +178,17 @@ h1,h2,h3{margin:0 0 10px}
 }
 
 .photo-story{
-  margin-top:10px;
+  margin-top:8px;
 }
 
-/* Story 按钮 */
+/* Story 按钮样式 */
 .photo-story summary{
   display:inline-flex;
   align-items:center;
   gap:8px;
   cursor:pointer;
   list-style:none;
-  padding:4px 10px;
+  padding:4px 14px;
   border-radius:999px;
   border:1px solid var(--line);
   background:var(--chip-bg);
@@ -213,14 +213,13 @@ h1,h2,h3{margin:0 0 10px}
 }
 .photo-story[open] .cw-caret{ transform:rotate(180deg); }
 
+/* 手机端也一样是“上图下文”，这里不需要再改布局了 */
 @media (max-width:760px){
-  .photo-row{
-    grid-template-columns:1fr;   /* 手机端变成上图下文一列 */
-  }
   .photo-main{
-    max-height:none;
+    max-height:none;   /* 移动端不给高度限制，让手机自己按比例缩放 */
   }
 }
+
 
 
 @media (max-width:760px){
