@@ -115,7 +115,7 @@
       "BuildMostExpensive":"Most Expensive Build",
       "BuildUSScavenged":"Scavenged Build",
       "BuildLab":"Confidentiality Checking..."
-
+    }
   };
 
   const getLang = () => localStorage.getItem("lang") || "en";
