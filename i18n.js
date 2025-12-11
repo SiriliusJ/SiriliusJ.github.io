@@ -31,7 +31,7 @@
       "ComputerScience":"计算机",
 
       "PCBuilds":"装机",
-      "PhotoWall":"照片墙"
+      "PhotoWall":"照片墙",
       /* 正文键留空：AffilLine/Hello/SeeAllCoursework 等 */
     },
 
@@ -66,7 +66,7 @@
       "ComputerScience":"情報・計算機",
 
       "PCBuilds":"自作PC",
-      "PhotoWall":"フォトウォール"
+      "PhotoWall":"フォトウォール",
     },
 
     en: {
