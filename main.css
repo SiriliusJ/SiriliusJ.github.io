@@ -145,6 +145,84 @@ h1,h2,h3{margin:0 0 10px}
 /* PC Builds: bigger image since we now have full width */
 .pc-card .card-thumb{ height: 220px; }
 
+/* Photo Wall: single large photo + collapsible story */
+.photo-row{
+  display:grid;
+  grid-template-columns:minmax(0, 3fr) minmax(0, 4fr); /* 左图右文 */
+  gap:16px;
+  align-items:flex-start;
+  margin-top:16px;
+}
+
+.photo-main{
+  width:100%;
+  max-height:380px;      /* 想更大可以调高这行高度 */
+  object-fit:cover;
+  border-radius:12px;
+  background:#f2f2f2;
+}
+
+.photo-text{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.photo-title{
+  margin:0;
+  font-weight:700;
+}
+
+.photo-meta{
+  margin:0;
+}
+
+.photo-story{
+  margin-top:10px;
+}
+
+/* Story 按钮 */
+.photo-story summary{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  cursor:pointer;
+  list-style:none;
+  padding:4px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:var(--chip-bg);
+  font-size:0.95rem;
+}
+.photo-story summary::-webkit-details-marker{ display:none; }
+
+.photo-body{
+  margin-top:8px;
+  padding:10px 12px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:#fff;
+  color:#333;
+}
+
+/* 复用 cw-caret 的转动效果 */
+.photo-story .cw-caret{
+  margin-left:4px;
+  color:#6b7280;
+  transition:transform .15s;
+}
+.photo-story[open] .cw-caret{ transform:rotate(180deg); }
+
+@media (max-width:760px){
+  .photo-row{
+    grid-template-columns:1fr;   /* 手机端变成上图下文一列 */
+  }
+  .photo-main{
+    max-height:none;
+  }
+}
+
+
 @media (max-width:760px){
   .pc-card .card-thumb{ height: 180px; }
 }
