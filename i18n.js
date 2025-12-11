@@ -107,15 +107,15 @@
       "ComputerScience":"Computer Science",
 
       /* Misc 标题保留 */
-"PCBuilds":"PC Builds",
-"PhotoWall":"Photo Wall",
-"PhotoWallIntro":"A few photos I find particularly memorable or just amusing."
+      "PCBuilds":"PC Builds",
+      "PhotoWall":"Photo Wall",
+      "PhotoWallIntro":"A few photos I find particularly memorable or just amusing.",
 
-"BuildEarliest":"Earliest PC Build",
-"BuildMostExpensive":"Most Expensive Build",
-"BuildUSScavenged":"Scavenged Build",
-"BuildLab":"XXX Build"
-    }
+      "BuildEarliest":"Earliest PC Build",
+      "BuildMostExpensive":"Most Expensive Build",
+      "BuildUSScavenged":"Scavenged Build",
+      "BuildLab":"Confidentiality Checking..."
+
   };
 
   const getLang = () => localStorage.getItem("lang") || "en";
