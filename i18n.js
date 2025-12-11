@@ -121,12 +121,19 @@
   const getLang = () => localStorage.getItem("lang") || "en";
   const setLang = (lang) => localStorage.setItem("lang", lang);
 
-  // ZH/JA 未设置键显示空；EN 正常
-  function t(lang, key){
-    if (lang === "en") return (dict.en[key] || "");
-    const L = dict[lang] || {};
-    return (Object.prototype.hasOwnProperty.call(L, key) ? (L[key] || "") : "");
+function t(lang, key){
+  // 英文：正常取值
+  if (lang === "en") {
+    return (dict.en[key] || "");
   }
+
+  // 非英文：该语言有非空翻译，就用；否则回退到英文
+  const L = dict[lang] || {};
+  if (Object.prototype.hasOwnProperty.call(L, key) && L[key]) {
+    return L[key];
+  }
+  return (dict.en[key] || "");
+}
 
   function applyI18n(lang) {
     document.querySelectorAll("[data-i18n]").forEach(el => {
