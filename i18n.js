@@ -109,7 +109,7 @@
       /* Misc 标题保留 */
 "PCBuilds":"PC Builds",
 "PhotoWall":"Photo Wall",
-"PhotoWallIntro":"A casual wall of memorable moments.",
+"PhotoWallIntro":"A few photos I find particularly memorable or just amusing."
 
 "BuildEarliest":"Earliest PC Build",
 "BuildMostExpensive":"Most Expensive Build",
