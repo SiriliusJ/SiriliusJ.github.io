@@ -154,7 +154,7 @@ h1,h2,h3{margin:0 0 10px}
 .photo-main{
   display:block;
   width:100%;
-  max-height:420px;        /* 想再高一点就调这个，比如 460 */
+  max-height:500px;        /* 想再高一点就调这个，比如 460 */
   object-fit:cover;
   border-radius:16px;
   background:#f2f2f2;
