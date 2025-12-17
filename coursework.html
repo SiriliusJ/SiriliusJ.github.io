@@ -2,30 +2,34 @@
 <html lang="en" data-lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yiyang Jiang · Coursework</title>
-  <meta name="description" content="Selected coursework of Yiyang Jiang" />
   <link rel="icon" href="images/icon/logo.jpg" />
 
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Optional: Bootstrap & Icons -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
+  <!-- Site styles -->
   <link rel="stylesheet" href="main.css" />
-</head>
+  <link rel="stylesheet" href="css/custom.css" />
 
-<body>
+  <script src="js/jquery-2.1.3.min.js"></script>
+</head>
+<body class="cw-page">
+  <!-- Top nav -->
   <header class="site-header">
     <div class="wrapper">
       <nav class="site-nav">
-        <a class="brand" href="index.html#top" title="Home">Yiyang Jiang</a>
+        <a class="brand" href="index.html#top">Yiyang Jiang</a>
         <div class="nav-right">
           <div class="lang-switch">
             <button class="lang-btn" data-lang="en">EN</button><span class="sep">/</span>
             <button class="lang-btn" data-lang="zh">中文</button><span class="sep">/</span>
             <button class="lang-btn" data-lang="ja">日本語</button>
           </div>
-          <a class="page-link" href="index.html" data-i18n="Home"><b>Home</b></a>
+          <a class="page-link" href="index.html#bio" data-i18n="Home"><b>Home</b></a>
           <a class="page-link" href="experience.html" data-i18n="Experience"><b>Experience</b></a>
           <a class="page-link" href="coursework.html" data-i18n="Coursework"><b>Coursework</b></a>
           <a class="page-link" href="misc.html" data-i18n="Misc"><b>Misc</b></a>
@@ -50,16 +54,18 @@
           <li>ESE 415 — Optimization</li>
           <li>ESE 520 — Probability and Stochastic Processes</li>
           <li>ESE 524 — Detection and Estimation Theory</li>
-          <li>ESE 5290 — Bayesian Statistics</li>
-          <li>ESE 5370 — Stochastic Control</li>
-          <li>ESE 503 — Graph Theory</li>
-          <li>ESE 507 — Machine Learning</li>
+          <li>ESE 527 — Practicum in Data Analytics & Statistics</li>
+          <li>CSE 412A — Introduction to Artificial Intelligence</li>
+          <li>CSE 417T — Introduction to Machine Learning</li>
+          <li>CSE 5015 — Bayesian Methods in Machine Learning</li>
         </ul>
 
         <h4 class="cw-subtitle" data-i18n="Audited">Audited</h4>
         <ul class="cw-list">
-          <li>MATH 5131 — Hyperbolic Geometry</li>
-          <li>ESE 5291-01 — Special Topics in Information Science and Engineering: Statistical Foundations of High-Dimensional Information</li>
+          <li>ESE 545 — Stochastic Control</li>
+          <li>SDS 5532 — Advanced Statistical Computing II</li>
+          <li>MATH 547-01 — Topics in Geometry: Hyperbolic Geometry</li>
+          <li>ESE 5291-01 — Special Topics in Information Science & Learning: Statistical Foundations of High-Dimensional Information</li>
         </ul>
       </div>
 
@@ -74,15 +80,17 @@
           <li>Computer Organization</li>
           <li>Operating Systems</li>
           <li>Computer Networks</li>
-
+          
           <li>Machine Learning</li>
           <li>Computer Vision</li>
-
+          
           <li>Artificial Intelligence for Operation Research</li>
           <li>Deep Learning Theory</li>
 
           <li>Differential Equations</li>
-          <li>Real Analysis</li>
+          <li>Functional Analysis</li>
+          <li>Generalized Functions and Function Spaces</li>
+          
         </ul>
       </div>
 
@@ -102,10 +110,158 @@
   <details class="cw-more">
     <summary>
       <span class="cw-title">Linear Algebra I-A, II-A</span>
-      <span class="tag-eq">required core</span>
+      <span class="tag-eq">≈ Linear Algebra</span>
+      <span class="tag-eq">≈ Advanced Linear Algebra</span>
+      <span class="tag-eq">≈ Matrix Analysis</span>
+      <span class="cw-caret" aria-hidden="true">▾</span>
     </summary>
-    <div class="cw-detail muted">
-      Matrix theory, eigenvalues, diagonalization, inner product spaces.
+    <div class="cw-body">
+      <div class="cw-note"><em>Textbooks:</em></div>
+      <ul class="cw-books">
+        <li>A. I. Kostrikin, <em>Introduction to Algebra</em>, Vol. I &amp; II.</li>
+        <li>G. E. Shilov, <em>An Introduction to the Theory of Linear Spaces</em>.</li>
+      </ul>
+    </div>
+  </details>
+</li>
+<li class="cw-course">
+  <details class="cw-more">
+    <summary>
+      <span class="cw-title">Calculus I-A, II-A, III</span>
+      <span class="cw-caret" aria-hidden="true">▾</span>
+    </summary>
+    <div class="cw-body">
+      <div class="cw-note"><em>Textbooks:</em></div>
+      <ul class="cw-books">
+        <li>V. A. Zorich, <em>Mathematical Analysis</em>, Vol. I &amp; II.</li>
+        <li>B. P. Demidovich, <em>Problems in Mathematical Analysis</em>.</li>
+      </ul>
+    </div>
+  </details>
+</li>
+<!-- Algebra -->
+<li class="cw-course">
+  <details class="cw-more">
+    <summary>
+      <span class="cw-title">Algebra</span>
+      <span class="tag-eq">≈ Abstract Algebra</span>
+      <span class="tag-eq">≈ Field Theory &amp; Galois Theory</span>
+      <span class="tag-eq">≈ Lie Algebra &amp; Representation Theory</span>
+      <span class="cw-caret" aria-hidden="true">▾</span>
+    </summary>
+    <div class="cw-body">
+      <div class="cw-note"><em>Textbook:</em></div>
+      <ul class="cw-books">
+        <li>A. I. Kostrikin, <em>Introduction to Algebra</em>, Vol. III.</li>
+      </ul>
+    </div>
+  </details>
+</li>
+
+<!-- Complex Analysis -->
+<li class="cw-course">
+  <details class="cw-more">
+    <summary>
+      <span class="cw-title">Complex Analysis</span>
+      <span class="cw-caret" aria-hidden="true">▾</span>
+    </summary>
+    <div class="cw-body">
+      <div class="cw-note"><em>Textbook:</em></div>
+      <ul class="cw-books">
+        <li>Lars V. Ahlfors, <em>Complex Analysis</em>.</li>
+      </ul>
+    </div>
+  </details>
+</li>
+
+<!-- Basic Topology -->
+<li class="cw-course">
+  <details class="cw-more">
+    <summary>
+      <span class="cw-title">Basic Topology</span>
+      <span class="cw-caret" aria-hidden="true">▾</span>
+    </summary>
+    <div class="cw-body">
+      <div class="cw-note"><em>Textbook:</em></div>
+      <ul class="cw-books">
+        <li>James R. Munkres, <em>Topology</em>.</li>
+      </ul>
+    </div>
+  </details>
+</li>
+
+<!-- Real Analysis -->
+<li class="cw-course">
+  <details class="cw-more">
+    <summary>
+      <span class="cw-title">Real Analysis</span>
+      <span class="tag-eq">≈ Real Analysis</span>
+      <span class="tag-eq">≈ Measure Theory</span>
+      <span class="tag-eq">≈ Functional Analysis</span>
+      <span class="cw-caret" aria-hidden="true">▾</span>
+    </summary>
+    <div class="cw-body">
+      <div class="cw-note"><em>Textbooks:</em></div>
+      <ul class="cw-books">
+        <li>Elias M. Stein &amp; Rami Shakarchi, <em>Real Analysis: Measure Theory, Integration, and Hilbert Spaces</em>.</li>
+        <li>Emmanuele DiBenedetto, <em>Real Analysis</em>.</li>
+      </ul>
+    </div>
+  </details>
+</li>
+
+<!-- Probability Theory -->
+<li class="cw-course">
+  <details class="cw-more">
+    <summary>
+      <span class="cw-title">Probability Theory</span>
+      <span class="cw-caret" aria-hidden="true">▾</span>
+    </summary>
+    <div class="cw-body">
+      <div class="cw-note"><em>Textbooks:</em></div>
+      <ul class="cw-books">
+        <li>A. N. Shiryaev, <em>Probability-1</em> (GTM <strong>95</strong>).</li>
+        <li>A. N. Shiryaev, <em>Problems in Probability</em>.</li>
+      </ul>
+    </div>
+  </details>
+</li>
+
+<!-- Differential Geometry -->
+<li class="cw-course">
+  <details class="cw-more">
+    <summary>
+      <span class="cw-title">Differential Geometry</span>
+      <span class="tag-eq">≈ Differential Geometry</span>
+      <span class="tag-eq">≈ Differentiable Manifolds</span>
+      <span class="cw-caret" aria-hidden="true">▾</span>
+    </summary>
+    <div class="cw-body">
+      <div class="cw-note"><em>Textbooks:</em></div>
+      <ul class="cw-books">
+        <li>Shoshichi Kobayashi, <em>Differential Geometry of Curves and Surfaces</em>.</li>
+        <li>S. S. Chern, <em>Lectures on Differential Geometry</em>.</li>
+        <li>V. I. Arnold, <em>Mathematical Methods of Classical Mechanics</em> (GTM <strong>60</strong>).</li>
+      </ul>
+      <div class="cw-note">
+        <em>Supplement:</em> Raoul Bott &amp; Loring W. Tu, <em>Differential Forms in Algebraic Topology</em> (GTM <strong>82</strong>) — differential forms and de&nbsp;Rham cohomology up to the Hopf invariant.
+      </div>
+    </div>
+  </details>
+</li>
+<li class="cw-course">
+  <details class="cw-more">
+    <summary>
+      <span class="cw-title">Mathematical Statistics</span>
+      <span class="tag-eq">≈ Mathematical Statistics</span>
+      <span class="tag-eq">≈ Statistical Inference</span>
+      <span class="cw-caret" aria-hidden="true">▾</span>
+    </summary>
+    <div class="cw-body">
+      <div class="cw-note"><em>Textbook:</em></div>
+      <ul class="cw-books">
+        <li>Laisheng Wei, <em>Mathematical Statistics</em> (Chinese edition).</li>
+      </ul>
     </div>
   </details>
 </li>
@@ -113,30 +269,81 @@
 <li class="cw-course">
   <details class="cw-more">
     <summary>
-      <span class="cw-title">Real Analysis I-A, II-A</span>
-      <span class="tag-eq">required core</span>
+      <span class="cw-title">Discrete Mathematics</span>
+      <span class="tag-eq">≈ Discrete Mathematics</span>
+      <span class="tag-eq">≈ Combinatorics</span>
+      <span class="tag-eq">≈ Graph Theory</span>
+      <span class="cw-caret" aria-hidden="true">▾</span>
     </summary>
-    <div class="cw-detail muted">
-      Measure theory, Lebesgue integration, convergence theorems, functional analysis preliminaries.
+    <div class="cw-body">
+      <div class="cw-note"><em>Textbooks:</em></div>
+      <ul class="cw-books">
+        <li>Richard A. Brualdi, <em>Introductory Combinatorics</em>.</li>
+        <li>Béla Bollobás, <em>Graph Theory: An Introductory Course</em> (GTM <strong>63</strong>).</li>
+      </ul>
+      <div class="cw-note">Two-part course (combinatorics + graph theory).</div>
     </div>
   </details>
 </li>
+<li class="cw-course">
+  <details class="cw-more">
+    <summary>
+      <span class="cw-title">Applied Stochastic Processes</span>
+      <span class="tag-eq">≈ Stochastic Processes</span>
+      <span class="tag-eq">≈ Markov Processes</span>
+      <span class="cw-caret" aria-hidden="true">▾</span>
+    </summary>
+    <div class="cw-body">
+      <div class="cw-note"><em>Textbooks:</em></div>
+      <ul class="cw-books">
+        <li>Daniel W. Stroock, <em>An Introduction to Markov Processes</em> (GTM <strong>230</strong>).</li>
+        <li>G. F. Lawler, <em>Introduction to Stochastic Processes</em>.</li>
+      </ul>
+    </div>
+  </details>
+</li>
+<li class="cw-course">
+  <details class="cw-more">
+    <summary>
+      <span class="cw-title">Seminar on Probability and its Applications</span>
+      <span class="cw-caret" aria-hidden="true">▾</span>
+    </summary>
+    <div class="cw-body">
+      <div class="cw-note"><em>Textbook:</em></div>
+      <ul class="cw-books">
+        <li>A. N. Shiryaev, <em>Probability-2</em> (GTM <strong>95</strong>).</li>
+      </ul>
+
+      <div class="cw-note"><em>References (selected):</em></div>
+      <ul class="cw-books">
+        <li>E. T. Jaynes, <em>Probability Theory: The Logic of Science</em>.</li>
+        <li>Jun S. Liu, <em>Monte Carlo Strategies in Scientific Computing</em>.</li>
+        <li>Sheldon M. Ross, <em>Simulation</em>.</li>
+        <li>Tom M. Mitchell, <em>Machine Learning</em>.</li>
+      </ul>
+
+      <div class="cw-note">Final project: image generation (another team did image classification).</div>
+    </div>
+  </details>
+</li>
+            <li>Seminar on Applied Mathematics (Statistics)</li>
           </ul>
 
           <h5 class="cw-subtitle-mini" data-i18n="Physics">Physics</h5>
           <ul class="cw-list">
-            <li>Classical Mechanics <span class="tag-gray">required core (Fall 2019)</span></li>
-            <li>Electromagnetism <span class="tag-gray">required core (Spring 2020)</span></li>
-            <li>Quantum Mechanics <span class="tag-gray">required core (Spring 2021)</span></li>
-            <li>Thermodynamics &amp; Statistical Mechanics <span class="tag-gray">required core (Fall 2020)</span></li>
+            <li>Mechanics</li>
+            <li>Thermal Physics</li>
+            <li>Electromagnetics</li>
+            <li>Optics</li>
+            <li>Atomic Physics</li>
+            <li>Experimental Physics</li>
           </ul>
 
           <h5 class="cw-subtitle-mini" data-i18n="ComputerScience">Computer Science</h5>
           <ul class="cw-list">
-            <li>Programming I–II</li>
-            <li>Data Structures</li>
-            <li>Computer Organization</li>
-            <li>Operating Systems</li>
+            <li>Introduction to Computer Science</li>
+            <li>Artificial Intelligence</li>
+            <li>Natural Language Processing</li>
           </ul>
         </div>
 
@@ -144,31 +351,53 @@
         <ul class="cw-list">
           <li>Numerical Analysis</li>
           <li>Optimal Transport Theory and its Applications</li>
+          <li>Seminar on Applied Mathematics (Control Theory)</li>
+          <li>Theoretical Mechanics <span class="tag-gray">required core (Fall 2020)</span></li>
+          <li>Quantum Mechanics <span class="tag-gray">required core (Fall 2020)</span></li>
+          <li>Thermodynamics &amp; Statistical Mechanics <span class="tag-gray">required core (Fall 2020)</span></li>
         </ul>
 
         <h4 class="cw-subtitle" data-i18n="Seminar">Seminar</h4>
         <li class="cw-course">
   <details class="cw-more">
     <summary>
-      <span class="cw-title">Graphon Theory Reading Group</span>
-      <span class="tag-gray">self-organized</span>
+      <span class="cw-title">Seminar on Commutative Algebra and Algebraic Curves</span>
+      <span class="tag-eq">≈ Commutative Algebra</span>
+      <span class="cw-caret" aria-hidden="true">▾</span>
     </summary>
-    <div class="cw-detail muted">
-      Weekly reading and discussion on graph limits, dense graph models, and related topics.
+    <div class="cw-body">
+      <div class="cw-note">
+        <em>Organizer:</em> student-organized across cohorts; host: Lite Du &amp; Jingyuan Ye; supervisor: Prof. Ye Tian.
+      </div>
+      <div class="cw-note"><em>Textbooks:</em></div>
+      <ul class="cw-books">
+        <li>M. F. Atiyah &amp; I. G. Macdonald, <em>Introduction to Commutative Algebra</em>.</li>
+      </ul>
     </div>
   </details>
 </li>
-
       </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="wrapper">
-      <p class="muted">© Yiyang Jiang · Built with pure HTML/CSS/JS</p>
-    </div>
-  </footer>
+</section>
+</main>
 
-  <script src="i18n.js"></script>
+<footer class="site-footer">
+  <div class="wrapper footer-inner">
+    <div class="footer-text">Coursework.</div>
+  </div>
+</footer>
+
+<div class="back-to-top">Top</div>
+<script>
+  (function(){
+    var $btn = $('.back-to-top');
+    function sync(){ $btn.toggle($(window).scrollTop() > 220); }
+    $(window).on('scroll', sync); sync();
+    $btn.on('click', function(e){ e.preventDefault(); $('html,body').animate({scrollTop:0}, 300); });
+  })();
+</script>
+
+<!-- i18n for nav only (your existing file) -->
+<script src="i18n.js"></script>
 </body>
 </html>
