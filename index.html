@@ -9,22 +9,14 @@
   <link rel="icon" href="images/icon/logo.jpg" />
 
 
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-
-
+  <!-- Main CSS -->
   <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="css/custom.css" />
-
-
-  <script src="js/jquery-2.1.3.min.js"></script>
 </head>
 
 <body>
-
   <header class="site-header">
     <div class="wrapper">
       <nav class="site-nav">
@@ -52,66 +44,54 @@
 
         <img id="profile-avatar" class="avatar"
              src="images/self-portrait/me.jpg"
-             alt="portrait"
-             onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27600%27 height=%27600%27><rect width=%27100%25%27 height=%27100%25%27 fill=%27%23f2f2f2%27/><text x=%2750%25%27 y=%2750%25%27 dominant-baseline=%27middle%27 text-anchor=%27middle%27 fill=%27%23999%27 font-family=%27Arial%27 font-size=%2740%27>Avatar</text></svg>'" />
-      </div>
-      <div class="profile-col profile-col-2">
-        <div id="my-name" class="name">Yiyang Jiang（江易扬）</div>
+             alt="profile" />
 
-        <div id="my-title" class="subtitle" data-i18n="AffilLine">Department of Electrical & Systems Engineering (ESE), Washington University in St. Louis</div>
-        <div class="social-media">
-          <a href="https://scholar.google.com/citations?user=iABKDGMAAAAJ&hl=en&authuser=2" class="icon-button" aria-label="Google Scholar" target="_blank" rel="noreferrer"><i class="ai ai-google-scholar ai-2x"></i></a>
-          <a href="https://github.com/SiriliusJ" class="icon-button" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa fa-github fa-2x"></i></a>
-          <a href="mailto:j.yiyang@wustl.edu" class="icon-button" aria-label="Email"><i class="fa fa-envelope fa-2x"></i></a>
-          <a href="CV_2026Fall_Phd_Application.pdf" class="icon-button" aria-label="CV" target="_blank" rel="noreferrer" title="CV"><i class="fa fa-file-text fa-2x"></i></a>
+        <div class="profile-name">
+          <h1>Yiyang Jiang</h1>
+          <p class="muted" data-i18n="AffilLine"></p>
+        </div>
+
+        <div class="profile-links">
+          <a href="mailto:yiyangjiang@wustl.edu" class="link-chip"><i class="fa fa-envelope"></i> Email</a>
+          <a href="https://github.com/siriliusj" class="link-chip"><i class="fa fa-github"></i> GitHub</a>
+          <a href="https://scholar.google.com/" class="link-chip"><i class="fa fa-graduation-cap"></i> Scholar</a>
+          <a href="https://siriliusj.github.io/" class="link-chip"><i class="fa fa-globe"></i> Website</a>
         </div>
       </div>
-    </div>
-  </div>
 
-
-  <div class="page-content" id="top">
-    <div class="wrapper">
-
-      <!-- Biography -->
-      <section id="bio" class="section">
+      <div class="profile-col profile-col-2">
+        <section id="bio" class="section">
         <h1 class="section-title"><i class="fa fa-id-card"></i> <span data-i18n="Biography"><b>Biography</b></span></h1>
 
         <div class="bio-intro">
 
           <p data-i18n="Hello"></p>
-          <p class="muted"><a class="chip" href="coursework.html" data-i18n="SeeAllCoursework">See full coursework →</a></p>
+
+          <a class="more-link" href="coursework.html" data-i18n="SeeAllCoursework">See full coursework →</a>
         </div>
 
-
-        <div class="grid-2-edu">
-          <!-- Education -->
+        <div class="cards-2">
           <div class="card">
             <h3 class="card-title"><i class="fa fa-graduation-cap"></i> <span data-i18n="Education">Education</span></h3>
             <ul class="edu-list">
               <li class="edu-item">
-                <div class="edu-main">
+                <div class="edu-left">
                   <div class="edu-inst"><b>Washington University in St. Louis</b></div>
-                  <div class="edu-degree">M.S., Engineering Data Analytics & Statistics</div>
+                  <div class="edu-degree">M.S. in Data Analytics & Statistics</div>
                 </div>
-                <div class="edu-dates">09/2024 — 05/2026</div>
-              </li>
-
-              <li class="edu-item with-notes">
-                <div class="edu-main">
-                  <div class="edu-inst"><b>University of Chinese Academy of Sciences</b></div>
-                  <div class="edu-degree">B.S., Mathematics & Applied Mathematics</div>
-                </div>
-                <div class="edu-dates">09/2019 — 06/2023</div>
-                <div class="edu-notes">
-                  <ul class="edu-sublist">
-                    <li>Admitted in 2019 as Physics; transferred to Mathematics in Nov 2020.</li>
-                  </ul>
-                </div>
+                <div class="edu-dates">08/2024 — Present</div>
               </li>
 
               <li class="edu-item">
-                <div class="edu-main">
+                <div class="edu-left">
+                  <div class="edu-inst"><b>University of Chinese Academy of Sciences</b></div>
+                  <div class="edu-degree">B.S. in Mathematics & Applied Mathematics</div>
+                </div>
+                <div class="edu-dates">09/2019 — 06/2023</div>
+              </li>
+
+              <li class="edu-item">
+                <div class="edu-left">
                   <div class="edu-inst"><b>Xi’an Tieyi High School</b></div>
                   <div class="edu-degree">Hua Luogeng Science Elite Class</div>
                 </div>
@@ -122,38 +102,51 @@
 
           <!-- Research Interests -->
 <div class="card">
-  <h3 class="card-title"><i class="fa fa-star"></i> Research Interests</h3>
+  <h3 class="card-title"><i class="fa fa-star"></i> <span data-i18n="ResearchInterests">Research Interests</span></h3>
 
   <div class="skill-line">
     <span class="chip">Learning theory</span>
     <span class="chip">Generative models</span>
     <span class="chip">Foundations of deep learning</span>
+
+    <span class="chip">Graph theory</span>
     <span class="chip">Combinatorial optimization</span>
-    <span class="chip">Random graphs &amp; graphons</span>
-    <span class="chip">Optimal transport</span>
-    <span class="chip">Rough paths &amp; SDEs</span>
+
+    <span class="chip">Multimodal neuroimaging</span>
+    <span class="chip">BCI</span>
+    <span class="chip">Computational neuroscience</span>
   </div>
 </div>
+
         </div>
-        
-        <div class="capsule-bleed" aria-label="Research capsule map">
-          <picture>
-            <source srcset="images/research_capsules_stable.svg" type="image/svg+xml">
-            <img class="capsule-img"
-                 src="images/research_capsules_stable.png"
-                 alt="Research map: Machine Learning, Probability, Graph Theory, Optimization and their overlaps"
-                 loading="lazy"
-                 decoding="async">
-          </picture>
+
+        <div class="cards-2" style="margin-top:14px;">
+          <div class="card">
+            <h3 class="card-title"><i class="fa fa-trophy"></i> <span data-i18n="HonorsAwards">Honors & Awards</span></h3>
+            <ul class="clean-list">
+              <li><b>Dean’s Fellowship</b> (WashU ESE), 2024</li>
+              <li><b>Merit-based Scholarship</b> (UCAS), 2019–2023</li>
+              <li><b>First Prize</b>, National Undergraduate Math Modeling Contest, 2021</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title"><i class="fa fa-bullseye"></i> Focus</h3>
+            <ul class="clean-list">
+              <li>Optimization + learning</li>
+              <li>Graph theory + guarantees</li>
+              <li>Multimodal brain signals</li>
+            </ul>
+          </div>
         </div>
 
       </section>
 
 <!-- Research → Working Papers -->
 <section id="publications" class="section">
-  <h1 class="section-title"><i class="fa fa-flask" aria-hidden="true"></i> <b>Research</b></h1>
+  <h1 class="section-title"><i class="fa fa-flask" aria-hidden="true"></i> <span data-i18n="Research"><b>Research</b></span></h1>
   <div class="muted" style="margin:-6px 0 10px; font-size:12px; letter-spacing:.06em; text-transform:uppercase;">
-    Working Papers
+    <span data-i18n="WorkingPapers">Working Papers</span>
   </div>
 
   <div class="pub-list">
@@ -162,17 +155,14 @@
       <div class="pub-left">
         <img class="pub-thumb" src="publications/placeholder.jpg" alt="cover" onerror="this.style.display='none'">
       </div>
-      <div class="pub-right">
-        <div class="pub-title">Paper A: Title</div>
-        <div class="pub-authors"><b>Y. Jiang</b>, … · 2025 <span class="muted">(near submission)</span></div>
-        <div class="pub-desc">We show … .</div>
+      <div class="pub-body">
+        <div class="pub-title"><b>Title of Working Paper A</b></div>
+        <div class="pub-authors">Yiyang Jiang, Coauthor 1, Coauthor 2</div>
+        <div class="pub-venue">Working paper · 2025</div>
         <div class="pub-links">
-          [<a class="tag" href="#" target="_blank"><strong>Draft</strong></a>]
-          [<a class="tag" href="#" target="_blank"><strong>Poster 1</strong></a>]
-          [<a class="tag" href="#" target="_blank"><strong>Poster 2</strong></a>]
-        </div>
-        <div class="muted" style="font-size:12px; margin-top:4px;">
-          Posters reflect early directions, some results are superseded in the current version.
+          <a href="#" class="btn-sm">PDF</a>
+          <a href="#" class="btn-sm">arXiv</a>
+          <a href="#" class="btn-sm">Code</a>
         </div>
       </div>
     </article>
@@ -182,127 +172,29 @@
       <div class="pub-left">
         <img class="pub-thumb" src="publications/placeholder.jpg" alt="cover" onerror="this.style.display='none'">
       </div>
-      <div class="pub-right">
-        <div class="pub-title">Paper B: Title</div>
-        <div class="pub-authors"><b>Y. Jiang</b>, … · 2025 <span class="muted">(in preparation)</span></div>
-        <div class="pub-desc">One-line.</div>
+      <div class="pub-body">
+        <div class="pub-title"><b>Title of Working Paper B</b></div>
+        <div class="pub-authors">Yiyang Jiang, Coauthor 1</div>
+        <div class="pub-venue">Working paper · 2025</div>
         <div class="pub-links">
-          [<a class="tag" href="#" target="_blank"><strong>Abstract</strong></a>]
-          [<a class="tag" href="#" target="_blank"><strong>Draft</strong></a>]
-        </div>
-      </div>
-    </article>
-
-    <!-- Paper C -->
-    <article class="pub">
-      <div class="pub-left">
-        <img class="pub-thumb" src="publications/placeholder.jpg" alt="cover" onerror="this.style.display='none'">
-      </div>
-      <div class="pub-right">
-        <div class="pub-title">Paper C: Title</div>
-        <div class="pub-authors"><b>Y. Jiang</b>, … · 2025 <span class="muted">(in preparation)</span></div>
-        <div class="pub-desc">One-line.</div>
-        <div class="pub-links">
-          [<a class="tag" href="#" target="_blank"><strong>Abstract</strong></a>]
+          <a href="#" class="btn-sm">PDF</a>
+          <a href="#" class="btn-sm">arXiv</a>
         </div>
       </div>
     </article>
   </div>
 </section>
 
-
-      <!-- Honors & Awards -->
-      <section id="awards" class="section">
-        <h1 class="section-title"><i class="fa fa-trophy"></i> <span data-i18n="HonorsAwards">Honors & Awards</span></h1>
-        <ul class="award-list">
-          <li class="award-item">
-            <div class="award-main">
-              <div class="award-title"><b>ESE Master’s Honors Program</b></div>
-              <div class="award-desc">Research honors for outstanding ESE master’s students — WashU</div>
-            </div>
-            <div class="award-date">02/2025</div>
-          </li>
-          <li class="award-item">
-            <div class="award-main">
-              <div class="award-title"><b>Overseas Graduate Studies Fellowship</b></div>
-              <div class="award-desc">Covers first-year graduate tuition and living expenses abroad — UCAS</div>
-            </div>
-            <div class="award-date">08/2022</div>
-          </li>
-          <li class="award-item">
-            <div class="award-main">
-              <div class="award-title"><b>Second-Class Academic Scholarship</b></div>
-              <div class="award-desc">10%, awarded twice in 2021 and 2022 — UCAS</div>
-            </div>
-            <div class="award-date">10/2021 · 10/2022</div>
-          </li>
-          <li class="award-item">
-            <div class="award-main">
-              <div class="award-title"><b>Third-Class Academic Scholarship</b></div>
-              <div class="award-desc">20% — UCAS</div>
-            </div>
-            <div class="award-date">10/2020</div>
-          </li>
-          <li class="award-item">
-            <div class="award-main">
-              <div class="award-title"><b>Merit Student</b></div>
-              <div class="award-desc">University merit award — UCAS</div>
-            </div>
-            <div class="award-date">03/2020</div>
-          </li>
-        </ul>
-      </section>
-
-      <p class="top"><a href="#top">↑ Top</a></p>
+      </div>
     </div>
   </div>
 
-
   <footer class="site-footer">
-    <div class="wrapper footer-inner">
-      <div class="footer-social">
-        <a href="#" class="icon-button" aria-label="Google Scholar" target="_blank" rel="noreferrer">
-          <i class="ai ai-google-scholar-square ai-2x"></i>
-        </a>
-        <a href="https://github.com/SiriliusJ" class="icon-button" aria-label="GitHub" target="_blank" rel="noreferrer">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-        <a href="mailto:j.yiyang@wustl.edu" class="icon-button" aria-label="Email">
-          <i class="fa fa-envelope fa-2x"></i>
-        </a>
-      </div>
-      <div class="footer-text">This site uses a multilingual skeleton. Under Construction.</div>
-    </div>
-
-    <!-- ClustrMaps: visitor map under the footer text -->
-    <div class="wrapper footer-clustrmaps">
-      <div class="clustrmaps-container" id="clustrmaps-widget">
-        <script type="text/javascript" id="clustrmaps"
-          src="https://clustrmaps.com/map_v2.js?d=sSvX8OCSSrO9hUT7sR-lY7hbCUvESZwJiKMnd7kzE9Y&cl=ffffff&w=a"></script>
-
-        <noscript>
-          <a href="https://clustrmaps.com/site/1c8od"  title="ClustrMaps" target="_blank" rel="noreferrer">
-            <img src="https://www.clustrmaps.com/map_v2.png?d=sSvX8OCSSrO9hUT7sR-lY7hbCUvESZwJiKMnd7kzE9Y&cl=ffffff"
-                 alt="Visitor map" />
-          </a>
-        </noscript>
-      </div>
+    <div class="wrapper">
+      <p class="muted">© Yiyang Jiang · Built with pure HTML/CSS/JS</p>
     </div>
   </footer>
 
-
-  <!-- 返回顶部（jQuery） -->
-  <div class="back-to-top">Top</div>
-  <script>
-    (function(){
-      var $btn = $('.back-to-top');
-      function sync(){ $btn.toggle($(window).scrollTop() > 220); }
-      $(window).on('scroll', sync); sync();
-      $btn.on('click', function(e){ e.preventDefault(); $('html,body').animate({scrollTop:0}, 300); });
-    })();
-  </script>
-
-  <!-- 多语言字典 -->
   <script src="i18n.js"></script>
 </body>
 </html>
