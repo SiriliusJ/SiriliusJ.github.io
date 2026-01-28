@@ -528,3 +528,9 @@ h1,h2,h3{margin:0 0 10px}
     text-align:left;
   }
 }
+
+/* ===== Favorites (Misc page) ===== */
+.misc-page .fav-grid{ grid-template-columns:repeat(2,1fr); }
+@media (max-width:760px){
+  .misc-page .fav-grid{ grid-template-columns:1fr; }
+}
