@@ -32,6 +32,17 @@
 
       "PCBuilds":"装机",
       "PhotoWall":"照片墙",
+      "MangaAnime":"漫画与动画",
+      "MangaAnimeIntro":"我最喜欢的一些日本漫画/动画。",
+      "FavManga":"最喜欢的漫画",
+      "FavAnime":"最喜欢的动画",
+      "Scanlation":"汉化组与日语学习",
+      "ScanlationIntro":"我也参与过一些汉化组工作，做日文→中文的文字翻译来学习日语。",
+      "OtherFavorites":"其他最喜欢的东西",
+      "OtherFavoritesIntro":"除了漫画/动画以外，我也喜欢的音乐/音乐人、书、电视剧等。",
+      "Music":"音乐 / 音乐人",
+      "Books":"书",
+      "TVSeries":"剧集 / 电视剧",
       /* 正文键留空：AffilLine/Hello/SeeAllCoursework 等 */
     },
 
@@ -67,6 +78,17 @@
 
       "PCBuilds":"自作PC",
       "PhotoWall":"フォトウォール",
+      "MangaAnime":"漫画・アニメ",
+      "MangaAnimeIntro":"好きな漫画・アニメのメモ。",
+      "FavManga":"好きな漫画",
+      "FavAnime":"好きなアニメ",
+      "Scanlation":"ファン翻訳（JP→CN）",
+      "ScanlationIntro":"日本語学習のため、時々ファン翻訳グループで日本語テキストの中国語訳を手伝っています。",
+      "OtherFavorites":"その他のお気に入り",
+      "OtherFavoritesIntro":"音楽、読書、ドラマなど、漫画・アニメ以外の好きなもの。",
+      "Music":"音楽",
+      "Books":"本",
+      "TVSeries":"ドラマ・シリーズ",
     },
 
     en: {
@@ -86,6 +108,18 @@
       "Services":"<b>Services</b>",
       "Skills":"<b>Skills</b>",
       "Languages":"<b>Languages</b>",
+
+      "MangaAnime":"Manga & Anime",
+      "MangaAnimeIntro":"A small corner for manga/anime I love.",
+      "FavManga":"Favorite Manga",
+      "FavAnime":"Favorite Anime",
+      "Scanlation":"Fan Translation (JP → CN)",
+      "ScanlationIntro":"I also contribute to a fan-translation group occasionally: translating Japanese text into Chinese as a way to practice Japanese.",
+      "OtherFavorites":"Other Favorites",
+      "OtherFavoritesIntro":"Other things I enjoy, such as music, books, and TV series.",
+      "Music":"Music / Artists",
+      "Books":"Books",
+      "TVSeries":"TV Series",
 
       /* Home 正文（仍保持英文；中文/日语留空） */
       "AffilLine":"Department of Electrical & Systems Engineering (ESE), Washington University in St. Louis",
